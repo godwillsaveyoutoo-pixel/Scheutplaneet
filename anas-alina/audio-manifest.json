@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "language": "nl-BE",
   "namePronunciations": {},
   "clips": [
@@ -73,7 +73,7 @@
       "speaker": "Milan",
       "text": "Dag Alina. Klaar?",
       "pronunciation": null,
-      "src": "assets/audio/opening-04-milan-licht-1.mp3"
+      "src": "assets/audio/opening-04-milan-volume-3.mp3"
     },
     {
       "id": "opening-05",
@@ -118,7 +118,7 @@
       "speaker": "Milan",
       "text": "Kijk. Voor de speeltijd.",
       "pronunciation": null,
-      "src": "assets/audio/maandag-04-milan-licht-1.mp3"
+      "src": "assets/audio/maandag-04-milan-volume-3.mp3"
     },
     {
       "id": "maandag-05",
@@ -145,7 +145,7 @@
       "speaker": "Milan",
       "text": "Ik ook.",
       "pronunciation": null,
-      "src": "assets/audio/maandag-07-milan-licht-1.mp3"
+      "src": "assets/audio/maandag-07-milan-volume-3.mp3"
     },
     {
       "id": "maandag-08",
@@ -172,7 +172,7 @@
       "speaker": "Milan",
       "text": "Ja, kies maar.",
       "pronunciation": null,
-      "src": "assets/audio/maandag-10-milan-licht-1.mp3"
+      "src": "assets/audio/maandag-10-milan-volume-3.mp3"
     },
     {
       "id": "maandag-11",
@@ -208,7 +208,7 @@
       "speaker": "Milan",
       "text": "Wat dan?",
       "pronunciation": null,
-      "src": "assets/audio/maandag-na-03-milan-licht-1.mp3"
+      "src": "assets/audio/maandag-na-03-milan-volume-3.mp3"
     },
     {
       "id": "maandag-na-04",
@@ -244,7 +244,7 @@
       "speaker": "Milan",
       "text": "Heb je iets meegebracht?",
       "pronunciation": null,
-      "src": "assets/audio/dinsdag-02-milan-licht-1.mp3"
+      "src": "assets/audio/dinsdag-02-milan-volume-3.mp3"
     },
     {
       "id": "dinsdag-03",
@@ -280,7 +280,7 @@
       "speaker": "Milan",
       "text": "Dat ruikt lekker.",
       "pronunciation": null,
-      "src": "assets/audio/dinsdag-06-milan-licht-1.mp3"
+      "src": "assets/audio/dinsdag-06-milan-volume-3.mp3"
     },
     {
       "id": "dinsdag-07",
@@ -307,7 +307,7 @@
       "speaker": "Milan",
       "text": "Graag.",
       "pronunciation": null,
-      "src": "assets/audio/dinsdag-09-milan-licht-1.mp3"
+      "src": "assets/audio/dinsdag-09-milan-volume-3.mp3"
     },
     {
       "id": "dinsdag-10",
@@ -334,7 +334,7 @@
       "speaker": "Milan",
       "text": "Nu ruikt mijn doosje ook naar mandarijn.",
       "pronunciation": null,
-      "src": "assets/audio/dinsdag-na-02-milan-licht-1.mp3"
+      "src": "assets/audio/dinsdag-na-02-milan-volume-3.mp3"
     },
     {
       "id": "dinsdag-na-03",
@@ -406,7 +406,7 @@
       "speaker": "Milan",
       "text": "Hazelnoten. Zonder de schil.",
       "pronunciation": null,
-      "src": "assets/audio/woensdag-05-milan-licht-1.mp3"
+      "src": "assets/audio/woensdag-05-milan-volume-3.mp3"
     },
     {
       "id": "woensdag-06",
@@ -424,7 +424,7 @@
       "speaker": "Milan",
       "text": "Nee. Eekhoorns gaan niet naar school.",
       "pronunciation": null,
-      "src": "assets/audio/woensdag-07-milan-licht-1.mp3"
+      "src": "assets/audio/woensdag-07-milan-volume-3.mp3"
     },
     {
       "id": "woensdag-08",
@@ -451,7 +451,7 @@
       "speaker": "Milan",
       "text": "Wil je er drie?",
       "pronunciation": null,
-      "src": "assets/audio/woensdag-10-milan-licht-1.mp3"
+      "src": "assets/audio/woensdag-10-milan-volume-3.mp3"
     },
     {
       "id": "woensdag-11",
@@ -505,7 +505,7 @@
       "speaker": "Milan",
       "text": "Ik ook niet.",
       "pronunciation": null,
-      "src": "assets/audio/woensdag-na-04-milan-licht-1.mp3"
+      "src": "assets/audio/woensdag-na-04-milan-volume-3.mp3"
     },
     {
       "id": "woensdag-na-05",
@@ -541,7 +541,7 @@
       "speaker": "Milan",
       "text": "Mijn tussendoortje.",
       "pronunciation": null,
-      "src": "assets/audio/donderdag-03-milan-licht-1.mp3"
+      "src": "assets/audio/donderdag-03-milan-volume-3.mp3"
     },
     {
       "id": "donderdag-04",
@@ -559,7 +559,7 @@
       "speaker": "Milan",
       "text": "Vergeten. Het ligt nog thuis.",
       "pronunciation": null,
-      "src": "assets/audio/donderdag-05-milan-licht-1.mp3"
+      "src": "assets/audio/donderdag-05-milan-volume-3.mp3"
     },
     {
       "id": "donderdag-06",
@@ -595,7 +595,7 @@
       "speaker": "Milan",
       "text": "Dank je. Ik pak mijn doosje.",
       "pronunciation": null,
-      "src": "assets/audio/donderdag-09-milan-licht-1.mp3"
+      "src": "assets/audio/donderdag-09-milan-volume-3.mp3"
     },
     {
       "id": "donderdag-10",
@@ -622,7 +622,7 @@
       "speaker": "Milan",
       "text": "Nu heb ik toch iets voor de speeltijd.",
       "pronunciation": null,
-      "src": "assets/audio/donderdag-na-02-milan-licht-1.mp3"
+      "src": "assets/audio/donderdag-na-02-milan-volume-3.mp3"
     },
     {
       "id": "donderdag-na-03",
@@ -649,7 +649,7 @@
       "speaker": "Milan",
       "text": "Zo. Klaar.",
       "pronunciation": null,
-      "src": "assets/audio/donderdag-na-05-milan-licht-1.mp3"
+      "src": "assets/audio/donderdag-na-05-milan-volume-3.mp3"
     },
     {
       "id": "donderdag-na-06",
@@ -721,7 +721,7 @@
       "speaker": "Milan",
       "text": "Zullen we in de speeltijd knikkeren?",
       "pronunciation": null,
-      "src": "assets/audio/vrijdag-07-milan-licht-1.mp3"
+      "src": "assets/audio/vrijdag-07-milan-volume-3.mp3"
     },
     {
       "id": "vrijdag-08",
@@ -739,7 +739,7 @@
       "speaker": "Milan",
       "text": "Je mag er van mij lenen.",
       "pronunciation": null,
-      "src": "assets/audio/vrijdag-09-milan-licht-1.mp3"
+      "src": "assets/audio/vrijdag-09-milan-volume-3.mp3"
     },
     {
       "id": "vrijdag-10",
@@ -766,7 +766,7 @@
       "speaker": "Milan",
       "text": "Jij mag er zes gebruiken.",
       "pronunciation": null,
-      "src": "assets/audio/vrijdag-12-milan-licht-1.mp3"
+      "src": "assets/audio/vrijdag-12-milan-volume-3.mp3"
     },
     {
       "id": "vrijdag-13",
@@ -811,7 +811,7 @@
       "speaker": "Milan",
       "text": "Die vind ik ook heel mooi.",
       "pronunciation": null,
-      "src": "assets/audio/vrijdag-na-04-milan-licht-1.mp3"
+      "src": "assets/audio/vrijdag-na-04-milan-volume-3.mp3"
     },
     {
       "id": "vrijdag-na-05",
@@ -838,7 +838,7 @@
       "speaker": "Milan",
       "text": "Kun jij goed mikken?",
       "pronunciation": null,
-      "src": "assets/audio/vrijdag-na-07-milan-licht-1.mp3"
+      "src": "assets/audio/vrijdag-na-07-milan-volume-3.mp3"
     },
     {
       "id": "vrijdag-na-08",
@@ -901,7 +901,7 @@
       "speaker": "Milan",
       "text": "Wat heb jij vandaag bij?",
       "pronunciation": null,
-      "src": "assets/audio/zaterdag-04-milan-licht-1.mp3"
+      "src": "assets/audio/zaterdag-04-milan-volume-3.mp3"
     },
     {
       "id": "zaterdag-05",
@@ -928,7 +928,7 @@
       "speaker": "Milan",
       "text": "Knikkers?",
       "pronunciation": null,
-      "src": "assets/audio/zaterdag-07-milan-licht-1.mp3"
+      "src": "assets/audio/zaterdag-07-milan-volume-3.mp3"
     },
     {
       "id": "zaterdag-08",
@@ -973,7 +973,7 @@
       "speaker": "Milan",
       "text": "Dank je. Dan bewaren we ze tot na het spelen.",
       "pronunciation": null,
-      "src": "assets/audio/zaterdag-12-milan-licht-1.mp3"
+      "src": "assets/audio/zaterdag-12-milan-volume-3.mp3"
     },
     {
       "id": "zaterdag-13",
@@ -1009,7 +1009,7 @@
       "speaker": "Milan",
       "text": "Ik ga naar de schommel!",
       "pronunciation": null,
-      "src": "assets/audio/zaterdag-na-03-milan-licht-1.mp3"
+      "src": "assets/audio/zaterdag-na-03-milan-volume-3.mp3"
     },
     {
       "id": "zaterdag-na-04",
@@ -1063,7 +1063,7 @@
       "speaker": "Milan",
       "text": "Vandaag heb ik niets bij. Ik ben al thuis!",
       "pronunciation": null,
-      "src": "assets/audio/zondag-04-milan-licht-1.mp3"
+      "src": "assets/audio/zondag-04-milan-volume-3.mp3"
     },
     {
       "id": "zondag-05",
@@ -1108,7 +1108,7 @@
       "speaker": "Milan",
       "text": "Ik geef jou vijf stukjes.",
       "pronunciation": null,
-      "src": "assets/audio/zondag-09-milan-licht-1.mp3"
+      "src": "assets/audio/zondag-09-milan-volume-3.mp3"
     },
     {
       "id": "zondag-10",
@@ -1153,7 +1153,7 @@
       "speaker": "Milan",
       "text": "Nu kunnen we beginnen.",
       "pronunciation": null,
-      "src": "assets/audio/zondag-na-02-milan-licht-1.mp3"
+      "src": "assets/audio/zondag-na-02-milan-volume-3.mp3"
     },
     {
       "id": "zondag-na-03",
@@ -1207,7 +1207,7 @@
       "speaker": "Milan",
       "text": "Dan kom ik jou weer halen.",
       "pronunciation": null,
-      "src": "assets/audio/slot-03-milan-licht-1.mp3"
+      "src": "assets/audio/slot-03-milan-volume-3.mp3"
     },
     {
       "id": "slot-04",

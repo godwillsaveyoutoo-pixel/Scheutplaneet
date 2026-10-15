@@ -3,10 +3,10 @@ import {prepareReadingPages} from './book-layout.mjs?v=anas-alina-1';
 import {createBookPictures} from './book-pictures.mjs?v=tempo-1';
 import {visualForPassage,visualsForPage} from './book-visuals.mjs?v=extra-prenten-1';
 import {createVoicePlayer,indexVoiceClips,voiceClipFor} from './book-audio.mjs?v=tempo-1';
-import {voiceClips} from './book-voices.mjs?v=milan-audio-2';
+import {voiceClips} from './book-voices.mjs?v=milan-volume-3';
 import {createTimedNarration} from './book-narration.mjs?v=tempo-1';
 import {createBufferedNarration} from './book-buffered-narration.mjs?v=tempo-1';
-import {narrationTracks} from './book-narration-data.mjs?v=milan-audio-2';
+import {narrationTracks} from './book-narration-data.mjs?v=milan-volume-3';
 import {createSharingExercise} from './simple-math.mjs?v=tempo-1';
 import {savedPlaybackRate,savePlaybackRate,applyTempoStyles} from './playback-tempo.mjs?v=1';
 
