@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8f2e5">
+  <meta name="description" content="Optellen en aftrekken met brug met 2×4-bouwblokjes. Verplaats de blokjes, teken de sok en volg de rekenstappen.">
+  <title>Rekenen met blokjes · Scheutplaneet</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/ComicNeue-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css?v=plusmin-4">
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../" aria-label="Terug naar Scheutplaneet">← <span>Scheutplaneet</span></a>
+    <h1>Rekenen met blokjes</h1>
+    <div class="modes" role="group" aria-label="Oefenvorm"><button data-mode="demo" aria-pressed="false">Kijk mee</button><button data-mode="guided" aria-pressed="true">Samen</button><button data-mode="solo" aria-pressed="false">Zelf</button></div>
+    <button id="settings-open" class="exercise-picker" aria-haspopup="dialog" aria-label="Kies optellen of aftrekken en een oefening">9 + 5 <span aria-hidden="true">⌄</span></button>
+    <div class="menu"><button id="menu-toggle" class="more" aria-label="Meer opties" aria-expanded="false" aria-controls="menu-items">···</button><nav id="menu-items" hidden><a id="story-return" href="../optellen.html?verder=1">Terug naar het optelverhaal</a><button id="reset">Deze oefening opnieuw</button><button id="colours-open">Kleuren kiezen</button><button id="fullscreen">Volledig scherm</button><button id="guide-open">Zo werkt het</button></nav></div>
+  </header>
+  <main id="workspace" aria-label="Optellen met een brug over tien">
+    <div class="board-wrap"><svg id="board" viewBox="0 0 1240 570" role="group" aria-label="Bovenaan de splitsing en de sok. Daaronder vullen we links aan tot tien met blokjes." xmlns="http://www.w3.org/2000/svg"></svg></div>
+    <section class="lesson-bar" aria-label="Rekenstap">
+      <button id="undo" class="undo" aria-label="Laatste blokje terugleggen" disabled>↶</button>
+      <button id="erase-stroke" class="erase-stroke" aria-label="Getekende vorm wissen" hidden>Gum</button>
+      <div class="directions"><p id="instruction" aria-live="polite"></p><p id="detail"></p></div>
+      <button id="action" class="primary">Laat verplaatsen</button>
+      <div id="choices" class="choices" role="group" aria-label="Kies je antwoord" hidden></div>
+    </section>
+  </main>
+  <aside class="portrait-note"><span aria-hidden="true">↻</span><p>Draai je scherm voor de blokjes.</p><a href="../">Terug naar Scheutplaneet</a></aside>
+  <dialog id="settings" aria-labelledby="settings-title"><form method="dialog" class="dialog-content"><button class="close" aria-label="Sluiten" value="cancel">×</button><p class="eyebrow">Brug over tien</p><h2 id="settings-title">Welke oefening?</h2><div class="operation-options" role="group" aria-label="Bewerking"><button type="button" data-operation="add" aria-pressed="true">Optellen</button><button type="button" data-operation="subtract" aria-pressed="false">Aftrekken</button></div><div class="preset-grid"><button type="button" data-pair="9,5">9 + 5</button><button type="button" data-pair="8,5">8 + 5</button><button type="button" data-pair="7,6">7 + 6</button><button type="button" data-pair="9,7">9 + 7</button><button type="button" data-pair="8,6">8 + 6</button><button type="button" data-pair="6,7">6 + 7</button></div><p class="own-label">Of kies zelf twee getallen</p><div class="own-pair"><label><span class="sr-only">Eerste getal</span><select id="first-number"></select></label><span id="own-symbol">+</span><label><span class="sr-only">Tweede getal</span><select id="second-number"></select></label><button type="button" id="start-pair" class="primary">Start</button></div><p id="pair-error" role="status"></p></form></dialog>
+  <dialog id="colour-dialog" aria-labelledby="colour-title"><form method="dialog" class="dialog-content"><button class="close" aria-label="Sluiten" value="cancel">×</button><p class="eyebrow">Rood, blauw of geel</p><h2 id="colour-title">Kleur van de blokjes</h2><div class="operation-options" role="group" aria-label="Aantal kleuren"><button type="button" data-colour-mode="one" aria-pressed="false">1 kleur</button><button type="button" data-colour-mode="two" aria-pressed="true">2 kleuren</button></div><p>Een verplaatst blokje houdt zijn kleur.</p><fieldset><legend id="first-colour-label">Eerste groepje · links</legend><div class="colour-options" id="first-colours"></div></fieldset><fieldset id="second-colour-group"><legend id="second-colour-label">Tweede groepje · rechts</legend><div class="colour-options" id="second-colours"></div></fieldset><button class="primary" value="done">Klaar</button></form></dialog>
+  <dialog id="guide" aria-labelledby="guide-title"><form method="dialog" class="dialog-content"><button class="close" aria-label="Sluiten" value="cancel">×</button><p class="eyebrow">Rekenen via tien</p><h2 id="guide-title">Verplaatsen, tekenen, rekenen.</h2><p><strong>Optellen:</strong> bij 9 + 5 verplaats je één blokje naar links om tien te maken. Je ziet 5 splitsen in 1 en 4. Teken rond de 9 en de 1; daarna verschijnt de sok en 10 + 4.</p><p><strong>Aftrekken:</strong> bij 15 − 8 liggen er tien blokjes en vijf losse bij ons. Leg eerst de vijf losse in het vak WEG. Teken rond de 15 en de 5: 15 − 5 = 10. Haal daarna nog drie blokjes uit het tienvak weg. Er blijven zeven bij ons; rechts liggen alle acht weggehaalde blokjes.</p><p><strong>Eén blokje telt als één.</strong> De acht nopjes tellen we niet apart. Kies bij de oefening Optellen of Aftrekken. In het menu kun je één of twee kleuren kiezen.</p><p><strong>Kijk mee:</strong> de leerkracht toont iedere stap.<br><strong>Samen:</strong> de leerkracht geeft het verplaatsen vrij.<br><strong>Zelf:</strong> verplaats, teken en kies je antwoord.</p><p>Een cirkel, ovaal of andere gesloten vorm volstaat. Terugleggen kan met ↶. De kleuren veranderen de aantallen niet.</p><button class="primary" value="done">Aan de slag</button></form></dialog>
+  <noscript>Schakel JavaScript in om met de blokjes te rekenen.</noscript>
+  <script type="module" src="app.mjs?v=plusmin-4"></script>
+</body>
+</html>
