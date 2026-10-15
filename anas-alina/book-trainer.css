@@ -1,0 +1,47 @@
+@font-face{font-family:"Comic Neue";src:url("assets/fonts/ComicNeue-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Comic Neue";src:url("assets/fonts/ComicNeue-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+
+/* The same arithmetic becomes a quiet page inside the picture book. */
+#viewport.book-embedded,.stage.book-embedded{background:#fff8e9;color:#263c2b;font-family:"Comic Neue","Trebuchet MS",sans-serif;--ink:#263c2b;--teal:#667d50;--green:#667d50;--blue:#a58a4a;--blue-light:#f5edcf}
+.stage.book-embedded{height:760px}
+.book-embedded .header,.book-embedded .context-label,.book-embedded #lesson-action,.book-embedded .finished,.book-embedded .sock-label{display:none!important}
+.book-embedded .activity{position:absolute;left:0;top:-70px;width:1440px;height:810px}
+.book-embedded .number,.book-embedded .symbol,.book-embedded .initial-gap{font-weight:700;letter-spacing:-2px}
+.book-embedded .number{border-radius:14px}
+.book-embedded .number.input{background:#fffaf0;border-color:#b4b89a;color:#747c5d}
+.book-embedded .number.active{background:#f5edcf;border:4px solid #a58a4a;box-shadow:none;color:#263c2b}
+.book-embedded .number.pickable{color:#435d39;border-color:#9ba782;background:#f0f2e1;box-shadow:none}
+.book-embedded .number.pickable:hover{background:#e9edda;border-color:#6e8054}
+.book-embedded .number.chosen{background:#e7edda;border-color:#6e8054;color:#435d39}
+.book-embedded .number.settled{background:transparent;border-color:transparent;color:#263c2b}
+.book-embedded .number.invalid{background:#f6e6c8;border-color:#b08243;color:#79592d}
+.book-embedded .initial-gap{color:#b4b69a}
+.book-embedded .ten,.book-embedded .has-sock .part-left{color:#667d50}
+.book-embedded .split-arrows,.book-embedded .split-arrows path{stroke:#40543c}
+.book-embedded .sock-body{fill:#dfe7ca;fill-opacity:.68;stroke:#7c8e61;stroke-width:4}
+.book-embedded .sock-cuff{fill:#e7e9d2;fill-opacity:.8;stroke:#7c8e61;stroke-width:3}
+.book-embedded .sock-patch{fill:#8e9c6c;fill-opacity:.12}
+.book-embedded .sock-seam,.book-embedded .sock-ribs{stroke:#8b996b}
+.book-embedded .sock pattern path{stroke:#84905f}
+.book-embedded .instruction,.book-embedded.with-action .instruction,.book-embedded .instruction.feedback,.book-embedded.with-action .instruction.feedback{left:72px;right:72px;top:520px;min-height:132px;padding:4px 12px;font-size:var(--book-instruction-size,44px);font-weight:700;line-height:1.2;letter-spacing:0;color:#263c2b;background:transparent;border-radius:0}
+.book-embedded .instruction.feedback,.book-embedded.with-action .instruction.feedback{color:#8b612e}
+.book-embedded .choices{top:685px;gap:13px}
+.book-embedded .choice{width:128px;height:var(--book-choice-height,100px);font-size:68px;font-weight:700;border:2px solid #a8b18e;border-radius:10px;background:#fff9ed;color:#31472d;box-shadow:none}
+.book-embedded .choices[data-range=answers]{gap:13px}
+.book-embedded .choices[data-range=answers] .choice{width:118px;font-size:62px}
+.book-embedded .choice:hover{background:#edf0dc;border-color:#728554}
+.book-embedded .choice:active{box-shadow:none}
+.book-embedded button:focus-visible{outline:4px solid #b9934f;outline-offset:5px}
+.book-embedded .guide-overlay{background:#42513b66}
+.book-embedded .guide-card{background:#fff8e9;border:1px solid #c9c7aa;border-radius:12px;box-shadow:0 8px 35px #34442a20}
+.book-embedded .guide-close{background:#edf0dc;color:#526c42}
+.book-embedded .guide-card h3,.book-embedded .guide-card .intro-kicker{color:#667d50}
+.book-embedded .guide-explanation{background:#ecedd8;border-radius:6px}
+.book-embedded .guide-note{color:#68765a}
+.book-embedded .guide-card>.lesson-action{background:#667d50;border-radius:8px;box-shadow:none}
+.book-embedded .portrait-note{color:#6a7758}
+
+/* Two-digit starting numbers and single-digit subtraction answers. */
+.number.first,.is-final>.number.first{left:172px;width:160px;font-size:122px}
+.sock-operation{left:285px;top:373px;width:72px;height:143px;font-size:90px;color:#667d50}
+.book-embedded .choice,.book-embedded .choices[data-range=answers] .choice{width:var(--book-choice-width,128px);font-size:68px}

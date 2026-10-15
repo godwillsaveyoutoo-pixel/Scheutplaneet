@@ -1,0 +1,1579 @@
+// Existing ElevenLabs takes, aligned to the media clock. Questions end each chapter.
+export const narrationTracks=[
+  {
+    "id": "week-01",
+    "src": "assets/audio/hoofdstuk-01-milan-licht-1.mp3",
+    "duration": 70.945,
+    "cues": [
+      {
+        "page": 1,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "doel-01",
+        "speaker": "Verteller",
+        "text": "Wat heb jij vandaag bij? Een week met Milan en Alina.",
+        "start": 0.22,
+        "end": 4.66
+      },
+      {
+        "page": 1,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "doel-02",
+        "speaker": "Verteller",
+        "text": "Vandaag leren we aftrekken tot twintig met brug over tien.",
+        "start": 5.21,
+        "end": 8.85
+      },
+      {
+        "page": 1,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "doel-03",
+        "speaker": "Verteller",
+        "text": "Eerst terug naar tien. Daarna trekken we de rest af.",
+        "start": 9.4,
+        "end": 12.72
+      },
+      {
+        "page": 1,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "doel-04",
+        "speaker": "Verteller",
+        "text": "We beginnen met een paar korte aftrekkingen die ons daarbij helpen.",
+        "start": 13.27,
+        "end": 16.91
+      },
+      {
+        "page": 1,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "opening-01",
+        "speaker": "Verteller",
+        "text": "Het is maandagochtend. Milan staat aan de tuinpoort van Alina’s huis.",
+        "start": 17.46,
+        "end": 22.1
+      },
+      {
+        "page": 1,
+        "beat": 5,
+        "sourceBeat": 4,
+        "sourceCue": "opening-01",
+        "speaker": "Verteller",
+        "text": "Hij komt haar ophalen om samen naar school te wandelen.",
+        "start": 22.42,
+        "end": 25.34
+      },
+      {
+        "page": 1,
+        "beat": 6,
+        "sourceBeat": 5,
+        "sourceCue": "opening-02",
+        "speaker": "Verteller",
+        "text": "Alina komt naar buiten met haar boekentas op haar rug.",
+        "start": 25.89,
+        "end": 28.65
+      },
+      {
+        "page": 1,
+        "beat": 7,
+        "sourceBeat": 6,
+        "sourceCue": "opening-03",
+        "speaker": "Alina",
+        "text": "Dag Milan!",
+        "start": 29.01,
+        "end": 29.93
+      },
+      {
+        "page": 1,
+        "beat": 8,
+        "sourceBeat": 7,
+        "sourceCue": "opening-04",
+        "speaker": "Milan",
+        "text": "Dag Alina. Klaar?",
+        "start": 30.265,
+        "end": 32.105
+      },
+      {
+        "page": 1,
+        "beat": 9,
+        "sourceBeat": 8,
+        "sourceCue": "opening-05",
+        "speaker": "Alina",
+        "text": "Ja!",
+        "start": 32.555,
+        "end": 32.955
+      },
+      {
+        "page": 2,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "maandag-01",
+        "speaker": "Verteller",
+        "text": "Ze wandelen samen de straat uit. In Milans jaszak ritselt iets.",
+        "start": 33.44,
+        "end": 38.36
+      },
+      {
+        "page": 2,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "maandag-02",
+        "speaker": "Alina",
+        "text": "Wat heb jij bij?",
+        "start": 40.435,
+        "end": 41.635
+      },
+      {
+        "page": 2,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "maandag-03",
+        "speaker": "Verteller",
+        "text": "Milan haalt een zakje uit zijn jaszak. Er zitten gummibeertjes in.",
+        "start": 42.185,
+        "end": 46.105
+      },
+      {
+        "page": 2,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "maandag-04",
+        "speaker": "Milan",
+        "text": "Kijk. Voor de speeltijd.",
+        "start": 46.555,
+        "end": 48.395
+      },
+      {
+        "page": 2,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "maandag-05",
+        "speaker": "Verteller",
+        "text": "Alina kijkt door het zakje.",
+        "start": 48.945,
+        "end": 50.825
+      },
+      {
+        "page": 2,
+        "beat": 5,
+        "sourceBeat": 5,
+        "sourceCue": "maandag-06",
+        "speaker": "Alina",
+        "text": "Ik lust die rode graag.",
+        "start": 51.275,
+        "end": 52.315
+      },
+      {
+        "page": 2,
+        "beat": 6,
+        "sourceBeat": 6,
+        "sourceCue": "maandag-07",
+        "speaker": "Milan",
+        "text": "Ik ook.",
+        "start": 52.7,
+        "end": 53.46
+      },
+      {
+        "page": 2,
+        "beat": 7,
+        "sourceBeat": 7,
+        "sourceCue": "maandag-08",
+        "speaker": "Verteller",
+        "text": "Bij een laag muurtje blijven ze even staan. Milan opent het zakje.",
+        "start": 54.01,
+        "end": 58.33
+      },
+      {
+        "page": 2,
+        "beat": 8,
+        "sourceBeat": 7,
+        "sourceCue": "maandag-08",
+        "speaker": "Verteller",
+        "text": "Er zitten acht gummibeertjes in.",
+        "start": 58.65,
+        "end": 60.85
+      },
+      {
+        "page": 2,
+        "beat": 9,
+        "sourceBeat": 8,
+        "sourceCue": "maandag-09",
+        "speaker": "Alina",
+        "text": "Mag ik er drie?",
+        "start": 61.265,
+        "end": 62.225
+      },
+      {
+        "page": 2,
+        "beat": 10,
+        "sourceBeat": 9,
+        "sourceCue": "maandag-10",
+        "speaker": "Milan",
+        "text": "Ja, kies maar.",
+        "start": 62.675,
+        "end": 63.595
+      },
+      {
+        "page": 2,
+        "beat": 11,
+        "sourceBeat": 10,
+        "sourceCue": "maandag-11",
+        "speaker": "Verteller",
+        "text": "Milan heeft acht gummibeertjes. Hij geeft er drie aan Alina. Hoeveel houdt hij zelf over?",
+        "start": 64.145,
+        "end": 70.545
+      }
+    ]
+  },
+  {
+    "id": "week-02",
+    "src": "assets/audio/hoofdstuk-02-milan-licht-1.mp3",
+    "duration": 57.005,
+    "cues": [
+      {
+        "page": 3,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "maandag-na-01",
+        "speaker": "Verteller",
+        "text": "Milan houdt vijf gummibeertjes over. Alina stopt haar drie beertjes in haar eigen doosje.",
+        "start": 0.31,
+        "end": 5.99
+      },
+      {
+        "page": 3,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "maandag-na-02",
+        "speaker": "Alina",
+        "text": "Dank je. Morgen breng ik iets lekkers voor jou mee.",
+        "start": 6.44,
+        "end": 9.56
+      },
+      {
+        "page": 3,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "maandag-na-03",
+        "speaker": "Milan",
+        "text": "Wat dan?",
+        "start": 10.01,
+        "end": 10.69
+      },
+      {
+        "page": 3,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "maandag-na-04",
+        "speaker": "Alina",
+        "text": "Dat zie je morgen.",
+        "start": 11.14,
+        "end": 12.34
+      },
+      {
+        "page": 3,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "maandag-na-05",
+        "speaker": "Verteller",
+        "text": "Ze stoppen het zakje en het doosje weg. Dan wandelen ze verder naar school.",
+        "start": 12.89,
+        "end": 17.45
+      },
+      {
+        "page": 4,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "dinsdag-01",
+        "speaker": "Verteller",
+        "text": "Op dinsdagochtend haalt Milan Alina weer op. Ze staat al klaar aan haar tuinpoort.",
+        "start": 18.0,
+        "end": 23.04
+      },
+      {
+        "page": 4,
+        "beat": 1,
+        "sourceBeat": 0,
+        "sourceCue": "dinsdag-01",
+        "speaker": "Verteller",
+        "text": "In haar hand houdt ze een brooddoos.",
+        "start": 23.36,
+        "end": 25.32
+      },
+      {
+        "page": 4,
+        "beat": 2,
+        "sourceBeat": 1,
+        "sourceCue": "dinsdag-02",
+        "speaker": "Milan",
+        "text": "Heb je iets meegebracht?",
+        "start": 25.77,
+        "end": 27.01
+      },
+      {
+        "page": 4,
+        "beat": 3,
+        "sourceBeat": 2,
+        "sourceCue": "dinsdag-03",
+        "speaker": "Alina",
+        "text": "Ja. Je mocht toch proeven?",
+        "start": 27.435,
+        "end": 28.755
+      },
+      {
+        "page": 4,
+        "beat": 4,
+        "sourceBeat": 3,
+        "sourceCue": "dinsdag-04",
+        "speaker": "Verteller",
+        "text": "Onderweg stoppen ze bij het muurtje. Alina opent haar brooddoos.",
+        "start": 29.305,
+        "end": 33.505
+      },
+      {
+        "page": 4,
+        "beat": 5,
+        "sourceBeat": 3,
+        "sourceCue": "dinsdag-04",
+        "speaker": "Verteller",
+        "text": "Er liggen mandarijnpartjes in. Ze heeft de mandarijn thuis al gepeld.",
+        "start": 35.165,
+        "end": 39.605
+      },
+      {
+        "page": 4,
+        "beat": 6,
+        "sourceBeat": 4,
+        "sourceCue": "dinsdag-05",
+        "speaker": "Verteller",
+        "text": "Milan buigt zich naar het doosje.",
+        "start": 40.155,
+        "end": 42.035
+      },
+      {
+        "page": 4,
+        "beat": 7,
+        "sourceBeat": 5,
+        "sourceCue": "dinsdag-06",
+        "speaker": "Milan",
+        "text": "Dat ruikt lekker.",
+        "start": 42.485,
+        "end": 43.485
+      },
+      {
+        "page": 4,
+        "beat": 8,
+        "sourceBeat": 6,
+        "sourceCue": "dinsdag-07",
+        "speaker": "Verteller",
+        "text": "Samen tellen ze de partjes. Het zijn er tien.",
+        "start": 44.035,
+        "end": 47.315
+      },
+      {
+        "page": 4,
+        "beat": 9,
+        "sourceBeat": 7,
+        "sourceCue": "dinsdag-08",
+        "speaker": "Alina",
+        "text": "Wil je er vier?",
+        "start": 47.765,
+        "end": 48.605
+      },
+      {
+        "page": 4,
+        "beat": 10,
+        "sourceBeat": 8,
+        "sourceCue": "dinsdag-09",
+        "speaker": "Milan",
+        "text": "Graag.",
+        "start": 49.055,
+        "end": 49.815
+      },
+      {
+        "page": 4,
+        "beat": 11,
+        "sourceBeat": 9,
+        "sourceCue": "dinsdag-10",
+        "speaker": "Verteller",
+        "text": "Alina heeft tien mandarijnpartjes. Ze geeft er vier aan Milan. Hoeveel houdt ze zelf over?",
+        "start": 50.365,
+        "end": 56.605
+      }
+    ]
+  },
+  {
+    "id": "week-03",
+    "src": "assets/audio/hoofdstuk-03-milan-licht-1.mp3",
+    "duration": 54.805,
+    "cues": [
+      {
+        "page": 5,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "dinsdag-na-01",
+        "speaker": "Verteller",
+        "text": "Alina houdt zes mandarijnpartjes over. Milan heeft er vier gekregen.",
+        "start": 0.31,
+        "end": 4.83
+      },
+      {
+        "page": 5,
+        "beat": 1,
+        "sourceBeat": 0,
+        "sourceCue": "dinsdag-na-01",
+        "speaker": "Verteller",
+        "text": "Hij legt ze in zijn eigen doosje.",
+        "start": 5.11,
+        "end": 6.87
+      },
+      {
+        "page": 5,
+        "beat": 2,
+        "sourceBeat": 1,
+        "sourceCue": "dinsdag-na-02",
+        "speaker": "Milan",
+        "text": "Nu ruikt mijn doosje ook naar mandarijn.",
+        "start": 7.32,
+        "end": 9.52
+      },
+      {
+        "page": 5,
+        "beat": 3,
+        "sourceBeat": 2,
+        "sourceCue": "dinsdag-na-03",
+        "speaker": "Verteller",
+        "text": "Hij doet het even open en ruikt nog eens.",
+        "start": 10.07,
+        "end": 12.35
+      },
+      {
+        "page": 5,
+        "beat": 4,
+        "sourceBeat": 3,
+        "sourceCue": "dinsdag-na-04",
+        "speaker": "Alina",
+        "text": "Niet alles opsnuiven, hè.",
+        "start": 12.8,
+        "end": 14.4
+      },
+      {
+        "page": 5,
+        "beat": 5,
+        "sourceBeat": 4,
+        "sourceCue": "dinsdag-na-05",
+        "speaker": "Verteller",
+        "text": "Milan lacht en klikt het deksel dicht. Samen wandelen ze verder.",
+        "start": 14.95,
+        "end": 19.27
+      },
+      {
+        "page": 6,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "woensdag-01",
+        "speaker": "Verteller",
+        "text": "Op woensdagochtend komt Milan Alina ophalen. Vandaag heeft hij een klein doosje bij.",
+        "start": 19.82,
+        "end": 24.9
+      },
+      {
+        "page": 6,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "woensdag-02",
+        "speaker": "Alina",
+        "text": "Wat zit daarin?",
+        "start": 25.35,
+        "end": 26.11
+      },
+      {
+        "page": 6,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "woensdag-03",
+        "speaker": "Verteller",
+        "text": "Milan schudt het doosje zachtjes.",
+        "start": 26.635,
+        "end": 28.395
+      },
+      {
+        "page": 6,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "woensdag-04",
+        "speaker": "Verteller",
+        "text": "Tik, tik, tik.",
+        "start": 28.945,
+        "end": 30.465
+      },
+      {
+        "page": 6,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "woensdag-05",
+        "speaker": "Milan",
+        "text": "Hazelnoten. Zonder de schil.",
+        "start": 30.915,
+        "end": 33.195
+      },
+      {
+        "page": 6,
+        "beat": 5,
+        "sourceBeat": 5,
+        "sourceCue": "woensdag-06",
+        "speaker": "Alina",
+        "text": "Ben jij soms een eekhoorn?",
+        "start": 33.645,
+        "end": 35.125
+      },
+      {
+        "page": 6,
+        "beat": 6,
+        "sourceBeat": 6,
+        "sourceCue": "woensdag-07",
+        "speaker": "Milan",
+        "text": "Nee. Eekhoorns gaan niet naar school.",
+        "start": 35.575,
+        "end": 38.135
+      },
+      {
+        "page": 6,
+        "beat": 7,
+        "sourceBeat": 7,
+        "sourceCue": "woensdag-08",
+        "speaker": "Verteller",
+        "text": "Alina lacht.",
+        "start": 38.685,
+        "end": 39.725
+      },
+      {
+        "page": 6,
+        "beat": 8,
+        "sourceBeat": 8,
+        "sourceCue": "woensdag-09",
+        "speaker": "Verteller",
+        "text": "Bij het muurtje maakt Milan zijn doosje open. Er zitten dertien hazelnoten in.",
+        "start": 40.275,
+        "end": 45.035
+      },
+      {
+        "page": 6,
+        "beat": 9,
+        "sourceBeat": 9,
+        "sourceCue": "woensdag-10",
+        "speaker": "Milan",
+        "text": "Wil je er drie?",
+        "start": 45.485,
+        "end": 46.445
+      },
+      {
+        "page": 6,
+        "beat": 10,
+        "sourceBeat": 10,
+        "sourceCue": "woensdag-11",
+        "speaker": "Alina",
+        "text": "Ja, graag.",
+        "start": 46.895,
+        "end": 47.895
+      },
+      {
+        "page": 6,
+        "beat": 11,
+        "sourceBeat": 11,
+        "sourceCue": "woensdag-12",
+        "speaker": "Verteller",
+        "text": "Milan heeft dertien hazelnoten. Hij geeft er drie aan Alina. Hoeveel houdt hij zelf over?",
+        "start": 48.445,
+        "end": 54.405
+      }
+    ]
+  },
+  {
+    "id": "week-04",
+    "src": "assets/audio/hoofdstuk-04-milan-licht-1.mp3",
+    "duration": 51.739,
+    "cues": [
+      {
+        "page": 7,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "woensdag-na-01",
+        "speaker": "Verteller",
+        "text": "Milan houdt tien hazelnoten over. Alina heeft er drie gekregen.",
+        "start": 0.31,
+        "end": 4.63
+      },
+      {
+        "page": 7,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "woensdag-na-02",
+        "speaker": "Verteller",
+        "text": "Ze doen hun doosjes dicht en stoppen ze in hun boekentas.",
+        "start": 5.18,
+        "end": 7.86
+      },
+      {
+        "page": 7,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "woensdag-na-03",
+        "speaker": "Alina",
+        "text": "Ik heb nog nooit een eekhoorn met een boekentas gezien.",
+        "start": 8.31,
+        "end": 10.35
+      },
+      {
+        "page": 7,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "woensdag-na-04",
+        "speaker": "Milan",
+        "text": "Ik ook niet.",
+        "start": 10.775,
+        "end": 11.655
+      },
+      {
+        "page": 7,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "woensdag-na-05",
+        "speaker": "Verteller",
+        "text": "Ze kijken even naar de boom naast het muurtje. Dan wandelen ze verder naar school.",
+        "start": 12.205,
+        "end": 16.925
+      },
+      {
+        "page": 8,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "donderdag-01",
+        "speaker": "Verteller",
+        "text": "Op donderdagochtend wacht Milan aan Alina’s tuinpoort. Als ze naar buiten komt,",
+        "start": 17.475,
+        "end": 21.822
+      },
+      {
+        "page": 8,
+        "beat": 1,
+        "sourceBeat": 0,
+        "sourceCue": "donderdag-01",
+        "speaker": "Verteller",
+        "text": "zoekt hij in zijn boekentas.",
+        "start": 21.875,
+        "end": 23.315
+      },
+      {
+        "page": 8,
+        "beat": 2,
+        "sourceBeat": 1,
+        "sourceCue": "donderdag-02",
+        "speaker": "Alina",
+        "text": "Wat zoek je?",
+        "start": 23.765,
+        "end": 24.965
+      },
+      {
+        "page": 8,
+        "beat": 3,
+        "sourceBeat": 2,
+        "sourceCue": "donderdag-03",
+        "speaker": "Milan",
+        "text": "Mijn tussendoortje.",
+        "start": 25.415,
+        "end": 26.268
+      },
+      {
+        "page": 8,
+        "beat": 4,
+        "sourceBeat": 3,
+        "sourceCue": "donderdag-04",
+        "speaker": "Verteller",
+        "text": "Hij kijkt nog eens in zijn tas. Dan doet hij die dicht.",
+        "start": 26.727,
+        "end": 29.887
+      },
+      {
+        "page": 8,
+        "beat": 5,
+        "sourceBeat": 4,
+        "sourceCue": "donderdag-05",
+        "speaker": "Milan",
+        "text": "Vergeten. Het ligt nog thuis.",
+        "start": 30.276,
+        "end": 32.129
+      },
+      {
+        "page": 8,
+        "beat": 6,
+        "sourceBeat": 5,
+        "sourceCue": "donderdag-06",
+        "speaker": "Alina",
+        "text": "Je mag van mij wat druiven hebben.",
+        "start": 32.579,
+        "end": 34.019
+      },
+      {
+        "page": 8,
+        "beat": 7,
+        "sourceBeat": 6,
+        "sourceCue": "donderdag-07",
+        "speaker": "Verteller",
+        "text": "Ze wandelen naar het muurtje. Alina haalt een doosje uit haar boekentas.",
+        "start": 34.569,
+        "end": 38.729
+      },
+      {
+        "page": 8,
+        "beat": 8,
+        "sourceBeat": 6,
+        "sourceCue": "donderdag-07",
+        "speaker": "Verteller",
+        "text": "Er zitten vijftien groene druiven in.",
+        "start": 39.049,
+        "end": 41.089
+      },
+      {
+        "page": 8,
+        "beat": 9,
+        "sourceBeat": 7,
+        "sourceCue": "donderdag-08",
+        "speaker": "Alina",
+        "text": "Ik geef je er acht.",
+        "start": 41.539,
+        "end": 42.659
+      },
+      {
+        "page": 8,
+        "beat": 10,
+        "sourceBeat": 8,
+        "sourceCue": "donderdag-09",
+        "speaker": "Milan",
+        "text": "Dank je. Ik pak mijn doosje.",
+        "start": 43.109,
+        "end": 45.149
+      },
+      {
+        "page": 8,
+        "beat": 11,
+        "sourceBeat": 9,
+        "sourceCue": "donderdag-10",
+        "speaker": "Verteller",
+        "text": "Alina heeft vijftien druiven. Ze geeft er acht aan Milan. Hoeveel houdt ze zelf over?",
+        "start": 45.699,
+        "end": 51.339
+      }
+    ]
+  },
+  {
+    "id": "week-05",
+    "src": "assets/audio/hoofdstuk-05-milan-licht-1.mp3",
+    "duration": 65.64,
+    "cues": [
+      {
+        "page": 9,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "donderdag-na-01",
+        "speaker": "Verteller",
+        "text": "Alina houdt zeven druiven over. In Milans doosje liggen de acht druiven die hij heeft",
+        "start": 0.31,
+        "end": 4.39
+      },
+      {
+        "page": 9,
+        "beat": 1,
+        "sourceBeat": 0,
+        "sourceCue": "donderdag-na-01",
+        "speaker": "Verteller",
+        "text": "gekregen.",
+        "start": 4.43,
+        "end": 5.19
+      },
+      {
+        "page": 9,
+        "beat": 2,
+        "sourceBeat": 1,
+        "sourceCue": "donderdag-na-02",
+        "speaker": "Milan",
+        "text": "Nu heb ik toch iets voor de speeltijd.",
+        "start": 5.64,
+        "end": 7.68
+      },
+      {
+        "page": 9,
+        "beat": 3,
+        "sourceBeat": 2,
+        "sourceCue": "donderdag-na-03",
+        "speaker": "Alina",
+        "text": "Doe je doosje goed dicht.",
+        "start": 8.13,
+        "end": 9.81
+      },
+      {
+        "page": 9,
+        "beat": 4,
+        "sourceBeat": 3,
+        "sourceCue": "donderdag-na-04",
+        "speaker": "Verteller",
+        "text": "Milan drukt het deksel vast. Hij stopt het doosje in zijn boekentas.",
+        "start": 10.36,
+        "end": 14.12
+      },
+      {
+        "page": 9,
+        "beat": 5,
+        "sourceBeat": 4,
+        "sourceCue": "donderdag-na-05",
+        "speaker": "Milan",
+        "text": "Zo. Klaar.",
+        "start": 14.57,
+        "end": 15.85
+      },
+      {
+        "page": 9,
+        "beat": 6,
+        "sourceBeat": 5,
+        "sourceCue": "donderdag-na-06",
+        "speaker": "Verteller",
+        "text": "Samen wandelen ze verder naar school.",
+        "start": 16.4,
+        "end": 18.6
+      },
+      {
+        "page": 10,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "vrijdag-01",
+        "speaker": "Verteller",
+        "text": "Op vrijdagochtend komt Milan weer bij Alina’s huis. Vandaag heeft hij een stoffen zakje bij.",
+        "start": 19.15,
+        "end": 24.35
+      },
+      {
+        "page": 10,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "vrijdag-02",
+        "speaker": "Verteller",
+        "text": "Als Alina naar buiten komt, schudt hij ermee.",
+        "start": 24.9,
+        "end": 27.14
+      },
+      {
+        "page": 10,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "vrijdag-03",
+        "speaker": "Verteller",
+        "text": "Rikketik. Rikketik.",
+        "start": 27.48,
+        "end": 29.32
+      },
+      {
+        "page": 10,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "vrijdag-04",
+        "speaker": "Alina",
+        "text": "Wat heb jij vandaag bij?",
+        "start": 29.77,
+        "end": 31.05
+      },
+      {
+        "page": 10,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "vrijdag-05",
+        "speaker": "Verteller",
+        "text": "Milan maakt het zakje open. Alina kijkt erin.",
+        "start": 31.6,
+        "end": 34.92
+      },
+      {
+        "page": 10,
+        "beat": 5,
+        "sourceBeat": 5,
+        "sourceCue": "vrijdag-06",
+        "speaker": "Alina",
+        "text": "Knikkers!",
+        "start": 35.37,
+        "end": 36.01
+      },
+      {
+        "page": 10,
+        "beat": 6,
+        "sourceBeat": 6,
+        "sourceCue": "vrijdag-07",
+        "speaker": "Milan",
+        "text": "Zullen we in de speeltijd knikkeren?",
+        "start": 36.46,
+        "end": 38.18
+      },
+      {
+        "page": 10,
+        "beat": 7,
+        "sourceBeat": 7,
+        "sourceCue": "vrijdag-08",
+        "speaker": "Alina",
+        "text": "Ja! Maar ik heb geen knikkers bij.",
+        "start": 38.63,
+        "end": 41.35
+      },
+      {
+        "page": 10,
+        "beat": 8,
+        "sourceBeat": 8,
+        "sourceCue": "vrijdag-09",
+        "speaker": "Milan",
+        "text": "Je mag er van mij lenen.",
+        "start": 41.8,
+        "end": 43.04
+      },
+      {
+        "page": 10,
+        "beat": 9,
+        "sourceBeat": 9,
+        "sourceCue": "vrijdag-10",
+        "speaker": "Verteller",
+        "text": "Bij het muurtje legt Milan zijn knikkers in het deksel van zijn brooddoos.",
+        "start": 43.59,
+        "end": 47.23
+      },
+      {
+        "page": 10,
+        "beat": 10,
+        "sourceBeat": 9,
+        "sourceCue": "vrijdag-10",
+        "speaker": "Verteller",
+        "text": "Daar kunnen ze niet uit rollen.",
+        "start": 49.77,
+        "end": 51.49
+      },
+      {
+        "page": 10,
+        "beat": 11,
+        "sourceBeat": 10,
+        "sourceCue": "vrijdag-11",
+        "speaker": "Verteller",
+        "text": "Samen tellen ze. Het zijn er veertien.",
+        "start": 52.04,
+        "end": 54.92
+      },
+      {
+        "page": 10,
+        "beat": 12,
+        "sourceBeat": 11,
+        "sourceCue": "vrijdag-12",
+        "speaker": "Milan",
+        "text": "Jij mag er zes gebruiken.",
+        "start": 55.37,
+        "end": 56.93
+      },
+      {
+        "page": 10,
+        "beat": 13,
+        "sourceBeat": 12,
+        "sourceCue": "vrijdag-13",
+        "speaker": "Verteller",
+        "text": "Milan heeft veertien knikkers bij. Hij leent er zes uit aan Alina.",
+        "start": 57.48,
+        "end": 62.28
+      },
+      {
+        "page": 10,
+        "beat": 14,
+        "sourceBeat": 12,
+        "sourceCue": "vrijdag-13",
+        "speaker": "Verteller",
+        "text": "Hoeveel stopt hij daarna in zijn eigen zakje?",
+        "start": 62.6,
+        "end": 65.24
+      }
+    ]
+  },
+  {
+    "id": "week-06",
+    "src": "assets/audio/hoofdstuk-06-milan-licht-1.mp3",
+    "duration": 81.955,
+    "cues": [
+      {
+        "page": 11,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "vrijdag-na-01",
+        "speaker": "Verteller",
+        "text": "Milan stopt de acht overgebleven knikkers in zijn zakje.",
+        "start": 0.31,
+        "end": 3.63
+      },
+      {
+        "page": 11,
+        "beat": 1,
+        "sourceBeat": 0,
+        "sourceCue": "vrijdag-na-01",
+        "speaker": "Verteller",
+        "text": "Alina bergt de zes geleende knikkers op.",
+        "start": 3.99,
+        "end": 6.51
+      },
+      {
+        "page": 11,
+        "beat": 2,
+        "sourceBeat": 1,
+        "sourceCue": "vrijdag-na-02",
+        "speaker": "Verteller",
+        "text": "Bij haar zes zit een blauwe knikker met een witte kronkel erin.",
+        "start": 7.06,
+        "end": 10.34
+      },
+      {
+        "page": 11,
+        "beat": 3,
+        "sourceBeat": 1,
+        "sourceCue": "vrijdag-na-02",
+        "speaker": "Verteller",
+        "text": "Ze houdt hem even in het licht.",
+        "start": 10.66,
+        "end": 12.38
+      },
+      {
+        "page": 11,
+        "beat": 4,
+        "sourceBeat": 2,
+        "sourceCue": "vrijdag-na-03",
+        "speaker": "Alina",
+        "text": "Deze vind ik de mooiste.",
+        "start": 12.83,
+        "end": 13.91
+      },
+      {
+        "page": 11,
+        "beat": 5,
+        "sourceBeat": 3,
+        "sourceCue": "vrijdag-na-04",
+        "speaker": "Milan",
+        "text": "Die vind ik ook heel mooi.",
+        "start": 14.26,
+        "end": 15.66
+      },
+      {
+        "page": 11,
+        "beat": 6,
+        "sourceBeat": 4,
+        "sourceCue": "vrijdag-na-05",
+        "speaker": "Alina",
+        "text": "Ik zal er goed op passen. Na school krijg je ze allemaal terug.",
+        "start": 16.04,
+        "end": 19.92
+      },
+      {
+        "page": 11,
+        "beat": 7,
+        "sourceBeat": 5,
+        "sourceCue": "vrijdag-na-06",
+        "speaker": "Verteller",
+        "text": "Ze stoppen de knikkers veilig weg en wandelen verder.",
+        "start": 20.47,
+        "end": 23.63
+      },
+      {
+        "page": 11,
+        "beat": 8,
+        "sourceBeat": 6,
+        "sourceCue": "vrijdag-na-07",
+        "speaker": "Milan",
+        "text": "Kun jij goed mikken?",
+        "start": 24.08,
+        "end": 25.28
+      },
+      {
+        "page": 11,
+        "beat": 9,
+        "sourceBeat": 7,
+        "sourceCue": "vrijdag-na-08",
+        "speaker": "Alina",
+        "text": "Dat gaan we straks zien.",
+        "start": 25.73,
+        "end": 26.85
+      },
+      {
+        "page": 11,
+        "beat": 10,
+        "sourceBeat": 8,
+        "sourceCue": "vrijdag-na-09",
+        "speaker": "Verteller",
+        "text": "Aan de schoolpoort nemen ze hun boekentas nog even goed vast.",
+        "start": 27.4,
+        "end": 30.56
+      },
+      {
+        "page": 11,
+        "beat": 11,
+        "sourceBeat": 8,
+        "sourceCue": "vrijdag-na-09",
+        "speaker": "Verteller",
+        "text": "Ze willen allebei graag naar binnen.",
+        "start": 30.84,
+        "end": 32.56
+      },
+      {
+        "page": 11,
+        "beat": 12,
+        "sourceBeat": 9,
+        "sourceCue": "vrijdag-na-10",
+        "speaker": "Verteller",
+        "text": "Vandaag hebben ze veel zin in de speeltijd.",
+        "start": 33.11,
+        "end": 35.99
+      },
+      {
+        "page": 12,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "zaterdag-01",
+        "speaker": "Verteller",
+        "text": "Het is zaterdag. Vandaag hoeven Milan en Alina niet naar school.",
+        "start": 36.54,
+        "end": 40.3
+      },
+      {
+        "page": 12,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "zaterdag-02",
+        "speaker": "Verteller",
+        "text": "Ze spreken af op het speelplein.",
+        "start": 40.85,
+        "end": 42.97
+      },
+      {
+        "page": 12,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "zaterdag-03",
+        "speaker": "Verteller",
+        "text": "Alina zit al aan de picknicktafel. Er staat een koekjestrommel voor haar.",
+        "start": 43.52,
+        "end": 47.64
+      },
+      {
+        "page": 12,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "zaterdag-04",
+        "speaker": "Milan",
+        "text": "Wat heb jij vandaag bij?",
+        "start": 48.09,
+        "end": 49.45
+      },
+      {
+        "page": 12,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "zaterdag-05",
+        "speaker": "Alina",
+        "text": "Dat hoor je toch?",
+        "start": 49.9,
+        "end": 51.06
+      },
+      {
+        "page": 12,
+        "beat": 5,
+        "sourceBeat": 5,
+        "sourceCue": "zaterdag-06",
+        "speaker": "Verteller",
+        "text": "Ze schudt de trommel heel zachtjes. Ritsel, tik.",
+        "start": 51.61,
+        "end": 55.41
+      },
+      {
+        "page": 12,
+        "beat": 6,
+        "sourceBeat": 6,
+        "sourceCue": "zaterdag-07",
+        "speaker": "Milan",
+        "text": "Knikkers?",
+        "start": 55.86,
+        "end": 56.54
+      },
+      {
+        "page": 12,
+        "beat": 7,
+        "sourceBeat": 7,
+        "sourceCue": "zaterdag-08",
+        "speaker": "Alina",
+        "text": "Koekjes! Knikkers mag je niet opeten.",
+        "start": 56.99,
+        "end": 59.91
+      },
+      {
+        "page": 12,
+        "beat": 8,
+        "sourceBeat": 8,
+        "sourceCue": "zaterdag-09",
+        "speaker": "Verteller",
+        "text": "Milan blijft naast de tafel staan. Alina maakt de trommel open.",
+        "start": 60.435,
+        "end": 64.355
+      },
+      {
+        "page": 12,
+        "beat": 9,
+        "sourceBeat": 9,
+        "sourceCue": "zaterdag-10",
+        "speaker": "Verteller",
+        "text": "Er liggen zestien kleine koekjes in. Tien bij elkaar en zes ernaast.",
+        "start": 64.905,
+        "end": 69.625
+      },
+      {
+        "page": 12,
+        "beat": 10,
+        "sourceBeat": 10,
+        "sourceCue": "zaterdag-11",
+        "speaker": "Alina",
+        "text": "Jij mag er zeven hebben.",
+        "start": 70.075,
+        "end": 71.515
+      },
+      {
+        "page": 12,
+        "beat": 11,
+        "sourceBeat": 11,
+        "sourceCue": "zaterdag-12",
+        "speaker": "Milan",
+        "text": "Dank je. Dan bewaren we ze tot na het spelen.",
+        "start": 71.965,
+        "end": 75.005
+      },
+      {
+        "page": 12,
+        "beat": 12,
+        "sourceBeat": 12,
+        "sourceCue": "zaterdag-13",
+        "speaker": "Verteller",
+        "text": "Alina heeft zestien koekjes. Ze geeft er zeven aan Milan. Hoeveel houdt ze zelf over?",
+        "start": 75.555,
+        "end": 81.555
+      }
+    ]
+  },
+  {
+    "id": "week-07",
+    "src": "assets/audio/hoofdstuk-07-milan-licht-1.mp3",
+    "duration": 59.01,
+    "cues": [
+      {
+        "page": 13,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "zaterdag-na-01",
+        "speaker": "Verteller",
+        "text": "Alina houdt negen koekjes over. Milan heeft er zeven gekregen.",
+        "start": 0.31,
+        "end": 4.67
+      },
+      {
+        "page": 13,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "zaterdag-na-02",
+        "speaker": "Verteller",
+        "text": "Ze bergen de koekjes veilig op. Nu eerst spelen.",
+        "start": 5.22,
+        "end": 8.82
+      },
+      {
+        "page": 13,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "zaterdag-na-03",
+        "speaker": "Milan",
+        "text": "Ik ga naar de schommel!",
+        "start": 9.27,
+        "end": 10.51
+      },
+      {
+        "page": 13,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "zaterdag-na-04",
+        "speaker": "Alina",
+        "text": "Wacht op mij!",
+        "start": 10.96,
+        "end": 11.96
+      },
+      {
+        "page": 13,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "zaterdag-na-05",
+        "speaker": "Verteller",
+        "text": "Milan blijft even staan. Dan lopen ze samen naar de schommels.",
+        "start": 12.51,
+        "end": 16.87
+      },
+      {
+        "page": 14,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "zondag-01",
+        "speaker": "Verteller",
+        "text": "Op zondag komt Alina bij Milan spelen.",
+        "start": 17.42,
+        "end": 19.82
+      },
+      {
+        "page": 14,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "zondag-02",
+        "speaker": "Verteller",
+        "text": "Hun jassen hangen aan de kapstok. In de keuken staat alles klaar om fruitspiesjes te maken.",
+        "start": 20.37,
+        "end": 25.57
+      },
+      {
+        "page": 14,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "zondag-03",
+        "speaker": "Alina",
+        "text": "Wat heb jij vandaag bij?",
+        "start": 26.02,
+        "end": 27.46
+      },
+      {
+        "page": 14,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "zondag-04",
+        "speaker": "Milan",
+        "text": "Vandaag heb ik niets bij. Ik ben al thuis!",
+        "start": 27.91,
+        "end": 30.71
+      },
+      {
+        "page": 14,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "zondag-05",
+        "speaker": "Verteller",
+        "text": "Alina kijkt naar de tafel.",
+        "start": 31.26,
+        "end": 32.9
+      },
+      {
+        "page": 14,
+        "beat": 5,
+        "sourceBeat": 5,
+        "sourceCue": "zondag-06",
+        "speaker": "Alina",
+        "text": "Maar je hebt wel iets op je bord.",
+        "start": 33.35,
+        "end": 34.87
+      },
+      {
+        "page": 14,
+        "beat": 6,
+        "sourceBeat": 6,
+        "sourceCue": "zondag-07",
+        "speaker": "Verteller",
+        "text": "Op Milan zijn bord liggen twaalf stukjes appel. Tien bij elkaar en twee ernaast.",
+        "start": 35.42,
+        "end": 40.62
+      },
+      {
+        "page": 14,
+        "beat": 7,
+        "sourceBeat": 7,
+        "sourceCue": "zondag-08",
+        "speaker": "Verteller",
+        "text": "Alina zet haar lege blauwe bord dichterbij.",
+        "start": 41.17,
+        "end": 43.85
+      },
+      {
+        "page": 14,
+        "beat": 8,
+        "sourceBeat": 8,
+        "sourceCue": "zondag-09",
+        "speaker": "Milan",
+        "text": "Ik geef jou vijf stukjes.",
+        "start": 44.3,
+        "end": 45.9
+      },
+      {
+        "page": 14,
+        "beat": 9,
+        "sourceBeat": 9,
+        "sourceCue": "zondag-10",
+        "speaker": "Alina",
+        "text": "Dan kan ik ook een spiesje maken.",
+        "start": 46.35,
+        "end": 48.15
+      },
+      {
+        "page": 14,
+        "beat": 10,
+        "sourceBeat": 10,
+        "sourceCue": "zondag-11",
+        "speaker": "Verteller",
+        "text": "De stukjes blijven op tafel liggen terwijl ze verdelen.",
+        "start": 48.7,
+        "end": 51.74
+      },
+      {
+        "page": 14,
+        "beat": 11,
+        "sourceBeat": 11,
+        "sourceCue": "zondag-12",
+        "speaker": "Verteller",
+        "text": "Milan heeft twaalf stukjes appel. Hij geeft er vijf aan Alina. Hoeveel houdt hij zelf over?",
+        "start": 52.29,
+        "end": 58.61
+      }
+    ]
+  },
+  {
+    "id": "week-08",
+    "src": "assets/audio/hoofdstuk-08-milan-licht-1.mp3",
+    "duration": 43.145,
+    "cues": [
+      {
+        "page": 15,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "zondag-na-01",
+        "speaker": "Verteller",
+        "text": "Milan houdt zeven stukjes appel over. Op Alina haar bord liggen vijf stukjes.",
+        "start": 0.31,
+        "end": 5.47
+      },
+      {
+        "page": 15,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "zondag-na-02",
+        "speaker": "Milan",
+        "text": "Nu kunnen we beginnen.",
+        "start": 5.92,
+        "end": 7.0
+      },
+      {
+        "page": 15,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "zondag-na-03",
+        "speaker": "Verteller",
+        "text": "Ze schuiven de stukjes één voor één op hun fruitstokjes.",
+        "start": 7.55,
+        "end": 10.75
+      },
+      {
+        "page": 15,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "zondag-na-04",
+        "speaker": "Alina",
+        "text": "Mijn spiesje is klaar!",
+        "start": 11.2,
+        "end": 12.32
+      },
+      {
+        "page": 15,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "zondag-na-05",
+        "speaker": "Verteller",
+        "text": "Milan schuift het laatste stukje op zijn stokje.",
+        "start": 12.87,
+        "end": 15.59
+      },
+      {
+        "page": 16,
+        "beat": 0,
+        "sourceBeat": 0,
+        "sourceCue": "slot-01",
+        "speaker": "Verteller",
+        "text": "De fruitspiesjes zijn klaar. Milan legt ze samen op een bord.",
+        "start": 16.14,
+        "end": 20.02
+      },
+      {
+        "page": 16,
+        "beat": 1,
+        "sourceBeat": 1,
+        "sourceCue": "slot-02",
+        "speaker": "Alina",
+        "text": "Morgen is het weer maandag.",
+        "start": 20.47,
+        "end": 21.63
+      },
+      {
+        "page": 16,
+        "beat": 2,
+        "sourceBeat": 2,
+        "sourceCue": "slot-03",
+        "speaker": "Milan",
+        "text": "Dan kom ik jou weer halen.",
+        "start": 22.055,
+        "end": 23.255
+      },
+      {
+        "page": 16,
+        "beat": 3,
+        "sourceBeat": 3,
+        "sourceCue": "slot-04",
+        "speaker": "Alina",
+        "text": "Aan mijn tuinpoort!",
+        "start": 23.585,
+        "end": 24.385
+      },
+      {
+        "page": 16,
+        "beat": 4,
+        "sourceBeat": 4,
+        "sourceCue": "slot-05",
+        "speaker": "Verteller",
+        "text": "Milan knikt. Ze kijken tevreden naar hun spiesjes.",
+        "start": 24.815,
+        "end": 28.135
+      },
+      {
+        "page": 16,
+        "beat": 5,
+        "sourceBeat": 5,
+        "sourceCue": "slot-06",
+        "speaker": "Verteller",
+        "text": "Deze week hebben ze heel wat gedeeld.",
+        "start": 28.685,
+        "end": 31.765
+      },
+      {
+        "page": 16,
+        "beat": 6,
+        "sourceBeat": 6,
+        "sourceCue": "slot-07",
+        "speaker": "Verteller",
+        "text": "Bij de moeilijke aftrekkingen gingen we eerst terug naar tien. Daarna trokken we de rest af.",
+        "start": 32.315,
+        "end": 37.515
+      },
+      {
+        "page": 16,
+        "beat": 7,
+        "sourceBeat": 7,
+        "sourceCue": "slot-08",
+        "speaker": "Verteller",
+        "text": "Eerst naar tien, dan de rest. Zo kunnen we aftrekken met brug over tien.",
+        "start": 38.065,
+        "end": 42.865
+      }
+    ]
+  }
+];

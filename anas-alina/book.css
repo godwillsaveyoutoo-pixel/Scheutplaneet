@@ -1,0 +1,110 @@
+@font-face{font-family:"Comic Neue";src:url("assets/fonts/ComicNeue-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Comic Neue";src:url("assets/fonts/ComicNeue-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+:root{color-scheme:light;font-family:"Trebuchet MS",system-ui,sans-serif;font-synthesis:none;--paper:#fff8e9;--ink:#263c2b;--forest:#22372b;--line:#dfd0b3;background:#22372b;color:var(--ink)}
+*{box-sizing:border-box}body{margin:0;overflow:hidden}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;touch-action:manipulation}button:disabled{cursor:default;opacity:.25}button:focus-visible,a:focus-visible{outline:3px solid #dc9d38;outline-offset:4px}[hidden]{display:none!important}
+.book{position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(ellipse,#45523b,#172b20 85%);overflow:hidden;isolation:isolate}
+.book-spread{position:relative;width:min(100vw,calc(100svh * 1.776834));height:min(100svh,calc(100vw * .562799));background:var(--paper);overflow:hidden;isolation:isolate;box-shadow:0 0 90px #0a1b1350}
+.picture-wrap{position:absolute;inset:0;min-width:0;min-height:0;display:flex;align-items:center;justify-content:center;background:#fff8e9}
+.page-picture{display:block;width:100%;height:100%;object-fit:contain;object-position:center;min-height:0}
+.image-status{position:absolute;inset:0;display:grid;place-items:center;background:#23392be8;color:var(--paper);font-family:"Comic Neue",sans-serif;font-size:24px;text-align:center;padding:35px;pointer-events:none}
+.story-copy{position:absolute;z-index:5;width:var(--copy-width,44%);padding:clamp(8px,1vw,18px) clamp(12px,1.7vw,28px);color:var(--ink);pointer-events:none;isolation:isolate;overflow:visible}
+.story-copy:before{content:"";position:absolute;z-index:-1;inset:-12px -20px;background:radial-gradient(ellipse at center,#fff9ecf9 25%,#fff9eceb 53%,#fff9ecc2 68%,#fff9ec00 90%);filter:blur(7px);pointer-events:none}
+.chapter-title{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;margin:0;padding:0}
+.copy-center{margin:0}.speaker{display:flex;align-items:center;gap:8px;margin:0 0 6px;color:#5a6c4c;font-family:"Comic Neue",sans-serif;font-size:clamp(12px,1vw,18px);font-weight:700;letter-spacing:.02em;line-height:1.2}.speaker:before{content:"";display:block;flex:none;width:6px;height:6px;border-radius:50%;background:var(--speaker-color,#947347)}
+.passage{font-family:"Comic Neue","Trebuchet MS",sans-serif;font-size:clamp(22px,2.6vw,46px);font-weight:400;line-height:1.23;letter-spacing:.005em;margin:0;overflow-wrap:normal;hyphens:none;text-wrap:pretty;text-shadow:0 1px 1px #fff8e9a0}
+.story-copy[data-dialogue=true] .passage{font-weight:700;font-style:normal}.story-copy[data-short=true] .passage{font-size:clamp(27px,3.2vw,54px)}
+.beat-dots{display:none}
+.book-spread[data-layout=top-left] .story-copy{top:3%;left:3%}.book-spread[data-layout=top-center] .story-copy{top:3%;left:50%;transform:translateX(-50%)}.book-spread[data-layout=top-right] .story-copy{top:3%;right:3%}
+.book-spread[data-layout=bottom-left] .story-copy{bottom:3%;left:3%}.book-spread[data-layout=bottom-center] .story-copy{bottom:3%;left:50%;transform:translateX(-50%)}.book-spread[data-layout=bottom-right] .story-copy{bottom:3%;right:3%}
+.text-hidden .copy-center,.text-hidden .chapter-title,.text-hidden .beat-dots{display:none}
+.text-hidden .story-copy{top:var(--copy-top,16%);left:var(--copy-side,4%);right:auto;bottom:auto;transform:none;min-width:170px}
+.text-hidden .story-copy[data-anchor$=-right]{left:auto;right:var(--copy-side,4%)}
+.text-hidden .story-copy:before{display:none}.text-hidden .solve{margin-top:0}
+.text-hidden .book-spread{display:block}.text-hidden .picture-wrap{position:absolute!important;inset:0!important}
+.page-turn{position:absolute;z-index:3;inset:0;width:100%;height:100%;border:0;border-radius:0;padding:0;background:transparent;color:#fff8eb;font-size:0;touch-action:manipulation;outline-offset:-5px}
+.page-turn:after{position:absolute;bottom:14px;right:20px;content:"›";font-family:"Comic Neue",sans-serif;font-weight:400;font-size:44px;line-height:1;text-shadow:0 1px 4px #142b20;opacity:.32;transition:opacity calc(.15s / var(--playback-rate,1))}
+.page-turn:hover:after,.page-turn:focus-visible:after{opacity:1}.turn-previous{inset:auto auto 0 0;width:65px;height:75px;z-index:4}.turn-previous:after{content:"‹";left:20px;right:auto}.page-turn:disabled{visibility:hidden}.page-turn:focus-visible{outline:3px solid #e5b56b;background:#fff4d803}
+.solve{position:relative;pointer-events:auto;z-index:6;margin:12px 0 0;padding:9px 18px;min-height:43px;border:1px solid #72906b;border-radius:22px;background:#fffdf4;color:#34593c;box-shadow:0 2px 8px #17352220;font-family:"Comic Neue",sans-serif;font-size:clamp(16px,1.2vw,23px);font-weight:700;line-height:1.1}.solve:before{content:"+";padding-right:8px;font-size:1.15em}.solve:hover{background:#eef4df;border-color:#365f3e}.solve:active{transform:translateY(1px)}
+.page-hint{position:fixed;z-index:7;bottom:max(12px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);max-width:80%;padding:7px 13px;margin:0;background:#263a30bd;color:#fff8e9;border-radius:18px;font-family:"Comic Neue",sans-serif;font-size:15px;line-height:1.2;text-align:center;pointer-events:none}.page-progress{position:fixed;z-index:9;bottom:7px;left:50%;transform:translateX(-50%);padding:3px 9px;border-radius:12px;background:#fff8e9d6;color:#4d664c;font-size:10px;line-height:1.2;pointer-events:none;opacity:0}.book.controls-open .page-progress{opacity:1}
+.book-header{position:fixed;z-index:20;top:max(9px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));display:flex;align-items:flex-start;justify-content:flex-end;gap:8px;pointer-events:none}.book-brand{display:none}.controls-toggle{pointer-events:auto;order:2;min-width:37px;height:33px;padding:0 7px 7px;border:1px solid #fff8e970;border-radius:17px;background:#fff8e9d9;color:#43593f;font-size:24px;line-height:1}.controls-toggle:hover,.controls-toggle[aria-expanded=true]{background:#fff8e9}.tools{pointer-events:auto;order:1;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:5px;padding:6px;border:1px solid #e1d4b8;border-radius:15px;background:#fff8e9f5;box-shadow:0 4px 18px #18271d25;max-width:calc(100vw - 74px)}.tools button,.quiet{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:0;border-radius:9px;background:transparent;color:#405d40;padding:7px 10px;min-height:34px;font-size:13px;line-height:1.2}.tools button:hover,.quiet:hover{background:#e9eddb}.tools button[aria-pressed=false]{background:#e3e9d6}.tools svg{height:18px;width:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.type-icon{font-family:"Comic Neue",sans-serif;font-size:19px}
+.next{min-height:42px;padding:10px 17px;border:1px solid transparent;border-radius:11px;background:#e6c491;color:#273b2c;font-size:15px;font-weight:600;line-height:1.2}.next:hover{background:#f1d5a8}
+@media(max-width:1000px){.story-copy{padding:9px 14px}.story-copy:before{inset:-8px -12px;filter:blur(5px)}.speaker{font-size:12px}.passage{font-size:clamp(20px,2.8vw,29px)}.story-copy[data-short=true] .passage{font-size:clamp(25px,3.6vw,38px)}.solve{min-height:37px;margin-top:9px;padding:7px 14px;font-size:16px}.page-turn:after{font-size:35px;right:13px;bottom:8px}.turn-previous:after{left:13px}.turn-previous{width:50px;height:60px}}
+@media(orientation:portrait){.page-hint{font-size:13px;bottom:12px}.tools{gap:3px}.tools button{font-size:12px;padding:7px}.page-turn:after{bottom:10px}}
+@media(prefers-reduced-motion:no-preference){.copy-center{animation:inkIn calc(.18s / var(--playback-rate,1)) ease-out}@keyframes inkIn{from{opacity:.5;transform:translateY(2px)}to{opacity:1;transform:none}}}
+dialog{padding:0;border:0;border-radius:20px;color:var(--ink);background:var(--paper);box-shadow:0 30px 90px #0005}dialog::backdrop{background:#0b1e18c9;backdrop-filter:blur(4px)}.contents-dialog{width:min(1100px,94vw);height:min(900px,92dvh);max-height:92dvh}.contents-dialog[open]{display:flex;flex-direction:column}.dialog-header{display:flex;align-items:center;justify-content:space-between;padding:24px 28px 20px;gap:24px;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#8a714b;margin:0 0 7px}.dialog-header h2{font-family:Georgia,serif;font-weight:400;font-size:29px;margin:0}.close{background:transparent;border:1px solid #c9c0ae;min-width:40px;height:40px;line-height:1;border-radius:50%;font-size:26px;color:#4b5b47}.close:hover{background:#ece3d2}.page-grid{padding:24px;overflow:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.page-card{padding:0;overflow:hidden;background:#fffaf2;border:2px solid transparent;border-radius:12px;box-shadow:0 2px 7px #28372512;text-align:left;color:var(--ink)}.page-card[aria-current=page]{border-color:#657d4e}.page-card:hover{border-color:#bba174}.page-card img{display:block;width:100%;aspect-ratio:1672/941;object-fit:contain;background:#263a30}.page-card .card-label{display:block;padding:11px 12px;font-size:14px;line-height:1.4}.card-label small{display:block;font-size:11px;color:#968261;margin-bottom:3px}.contents-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding:10px 24px;gap:20px}.contents-footer .quiet{border:0}.contents-footer a{font-size:13px;color:#576d45}
+@media(max-height:600px) and (orientation:landscape){.page-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:15px}.dialog-header{padding:12px 18px}.dialog-header h2{font-size:22px}.contents-footer{padding:5px 15px}}
+@media(orientation:portrait){.page-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:13px;gap:12px}.dialog-header{padding:16px}.dialog-header h2{font-size:23px}.contents-footer{padding:8px 13px;gap:8px}.contents-footer a,.contents-footer .quiet{font-size:12px}.math-footer .quiet{font-size:11px;padding:5px}.math-footer .next{font-size:12px;padding:9px}}
+/* Authored paper space belongs to the illustration; leave its surface visible. */
+.book-spread[data-authored=true][data-layout^=top] .story-copy{top:var(--copy-top,16%)}
+.book-spread[data-authored=true][data-layout$=-left] .story-copy{left:var(--copy-side,4%)}
+.book-spread[data-authored=true][data-layout$=-right] .story-copy{right:var(--copy-side,4%)}
+.book-spread[data-authored=true][data-layout^=bottom] .story-copy{bottom:var(--copy-bottom,3%)}
+.book-spread[data-authored=true] .story-copy:before{display:none}
+
+/* A calculation is another page of the book, on the same paper surface. */
+.calculating .book-header,.calculating .page-hint,.calculating .page-progress{display:none}
+.math-page{position:relative;width:min(100vw,calc(100svh * 1.776834));height:min(100svh,calc(100vw * .562799));display:flex;flex-direction:column;min-height:0;overflow:hidden;background:var(--paper);box-shadow:0 0 90px #0a1b1350;font-family:"Comic Neue","Trebuchet MS",sans-serif}
+.math-header{position:relative;z-index:10;flex:none;display:flex;align-items:center;gap:12px;height:64px;padding:8px 18px;border-bottom:1px solid #dfd0b38c;background:var(--paper)}
+.math-header h2{flex:1;min-width:0;margin:0;font-size:clamp(18px,1.65vw,28px);font-weight:700;line-height:1.15;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.math-header button{font-family:inherit;color:var(--ink);flex:none}
+.math-icon{display:inline-grid;place-items:center;width:38px;height:38px;padding:7px;border:0;border-radius:50%;background:transparent}
+.math-icon:hover,.math-next:hover{background:#e9eddb}.math-header svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.math-modes{display:flex;align-items:center;gap:2px;padding:3px;border-radius:20px;background:#ececda8f;flex:none}
+.math-modes button{padding:7px 13px;min-height:34px;border:0;border-radius:17px;background:transparent;font-size:16px;font-weight:700;white-space:nowrap}
+.math-modes button[aria-pressed=true]{background:#fffdf4;box-shadow:0 1px 4px #43563b13;color:#45673e}
+.math-action{min-height:36px;padding:8px 15px;border:0;border-radius:20px;background:#4f7049!important;color:#fffaf0!important;font-size:16px;font-weight:700;white-space:nowrap}
+.math-action:hover{background:#3d603a!important}.math-action:disabled{opacity:.5}
+.math-menu{position:relative;flex:none}.math-more{font-size:25px;line-height:1;padding-bottom:13px}
+.math-tools{position:absolute;top:calc(100% + 10px);right:0;min-width:178px;display:flex;flex-direction:column;gap:2px;padding:7px;border:1px solid var(--line);border-radius:14px;background:#fffaf0;box-shadow:0 5px 20px #263c2b1c}
+.math-tools button{display:flex;align-items:center;gap:10px;min-height:38px;border:0;border-radius:9px;padding:7px 10px;text-align:left;background:transparent;font-size:16px;white-space:nowrap}.math-tools button:hover{background:#ececda}
+.math-next{display:flex;align-items:center;gap:7px;padding:7px 9px;border:0;border-radius:18px;background:transparent;font-size:16px;white-space:nowrap}
+.math-next[data-complete=true]{color:#426b3b;font-weight:700;background:#e7ecd8}
+.math-page iframe{display:block;flex:1;min-height:0;width:100%;border:0;background:var(--paper)}
+.math-loading{position:absolute;inset:64px 0 0;z-index:5;display:grid;place-items:center;margin:0;padding:25px;text-align:center;background:var(--paper);font-size:clamp(22px,2vw,32px);pointer-events:none}
+.simple-math{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:20px;overflow:auto}
+.simple-math .eyebrow{margin:0;font-family:inherit;text-transform:none;letter-spacing:0;font-size:clamp(16px,1.4vw,23px);color:#667d52}
+.simple-math h3{font-size:clamp(42px,7vw,108px);font-weight:700;line-height:1.1;margin:0}
+.ten-frame{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:12px;border:1px solid #a7b697;border-radius:13px}
+.ten-cell{width:clamp(28px,4vw,55px);height:clamp(28px,4vw,55px);border:1px dashed #bfcaac;border-radius:50%;background:#f9f8e9}.ten-cell.first{background:#648956;border-color:#648956}.ten-cell.second{background:#d5a05b;border-color:#d5a05b}
+.simple-hint{font-size:clamp(24px,2.3vw,38px);line-height:1.23;margin:0;text-align:center;max-width:1100px}
+.simple-choices{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;max-width:850px}.simple-choices button{width:clamp(42px,5vw,67px);height:clamp(42px,5vw,67px);border:1px solid #b7b99b;border-radius:13px;background:#fffdf4;color:var(--ink);font-size:clamp(24px,3vw,35px);font-weight:700}
+.simple-choices button:hover{background:#ecedda}.simple-choices button:disabled{opacity:.5}.simple-feedback{margin:0;min-height:1.25em;font-size:clamp(20px,1.9vw,29px);line-height:1.25;color:#527145;text-align:center}
+@media(max-width:1000px){.math-header{height:50px;padding:5px 10px;gap:7px}.math-header h2{font-size:18px}.math-modes button{font-size:14px;padding:6px 9px;min-height:30px}.math-action{font-size:14px;padding:7px 11px;min-height:32px}.math-icon{width:33px;height:33px;padding:6px}.math-next{font-size:14px;padding:6px}.math-header svg{width:19px;height:19px}.math-more{font-size:23px;padding-bottom:11px}.math-next span{display:none}.math-loading{top:50px}}
+@media(max-height:600px) and (orientation:landscape){.math-header{height:46px;padding:4px 8px;gap:5px}.math-header h2{font-size:16px}.math-modes{padding:2px}.math-modes button{font-size:13px;min-height:30px;padding:5px 8px}.math-action{font-size:13px;min-height:32px;padding:6px 10px}.math-loading{top:46px}.simple-math{gap:8px;padding:9px}.simple-math .eyebrow{display:none}.simple-math h3{font-size:44px}.ten-frame{gap:6px;padding:7px}.ten-cell{width:24px;height:24px}.simple-hint{font-size:21px;max-width:650px}.simple-choices{gap:7px}.simple-choices button{width:40px;height:39px;font-size:25px}.simple-feedback{font-size:18px;min-height:22px}}
+@media(orientation:portrait){.math-page{width:100vw;height:100svh;max-height:none}.math-header{flex-wrap:wrap;height:auto;min-height:88px;gap:5px;padding:7px 9px}.math-header h2{flex-basis:calc(100% - 45px);font-size:20px}.math-modes{margin-right:auto}.math-action{font-size:13px;padding:7px 10px}.math-loading{top:90px}.simple-hint{font-size:24px}.simple-math{padding:20px 15px;gap:16px}}
+
+/* One deliberate start; the media clock drives the first two pages. */
+.reading-actions{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:12px}
+.reading-actions .solve{margin:0}
+.narration-play,.continue-story{position:relative;z-index:6;pointer-events:auto;min-height:44px;padding:9px 15px;border:1px solid #72906b;border-radius:22px;background:#fffdf4;color:#34593c;font-family:"Comic Neue",sans-serif;font-size:clamp(16px,1.2vw,22px);font-weight:700;line-height:1.15;box-shadow:0 2px 8px #17352220}
+.narration-play{background:#34593c;color:#fffdf4}.narration-play:hover{background:#24472d}.continue-story:hover{background:#eef4df}
+.playback-status{margin:7px 0 0;font-size:15px;line-height:1.25}.playback-status:empty{display:none}
+
+/* The same quiet book surface, with the warm colours of Milan and Alina. */
+.solve:before{content:"−"}
+.result-summary{font-size:clamp(16px,1.4vw,23px);color:#496949;line-height:1.3;margin:12px 0 0;padding-top:10px;border-top:1px solid #c9bca1}
+.ten-cell.given{background:#d9a06a;border:2px dashed #9a643d;opacity:.3;transform:scale(.82)}
+.simple-choices button{min-width:44px;min-height:44px}
+.simple-math .simple-hint{max-width:1050px}
+@media(max-height:600px) and (orientation:landscape){.simple-math{gap:5px}.simple-hint{font-size:20px}.ten-cell{width:20px;height:20px}.ten-frame{gap:4px;padding:5px}.simple-choices button{width:44px;height:44px}.simple-feedback{font-size:17px}.result-summary{font-size:15px;margin-top:6px;padding-top:6px}}
+
+/* Captions stay in the painted space; neither text nor playback state resizes the picture. */
+.page-picture{position:absolute;inset:0}
+.image-status{z-index:2}
+.image-status-error{inset:auto 14px 14px;padding:12px;border-radius:12px;font-size:18px}
+.story-copy{height:var(--copy-height,60%);padding:calc(12px * var(--caption-scale,1)) calc(20px * var(--caption-scale,1));overflow:hidden}
+.story-copy .speaker{font-size:calc(18px * var(--caption-scale,1));gap:calc(8px * var(--caption-scale,1));margin-bottom:calc(6px * var(--caption-scale,1))}
+.story-copy .speaker:before{width:calc(6px * var(--caption-scale,1));height:calc(6px * var(--caption-scale,1))}
+.reading-panel{position:absolute;z-index:6;bottom:3%;right:var(--copy-side,4%);width:var(--copy-width,29%);padding:0 12px;pointer-events:none}
+.reading-panel[data-anchor$=-left]{right:auto;left:var(--copy-side,4%)}
+.reading-panel .reading-actions{margin-top:0}
+.narration-replay{position:relative;z-index:6;pointer-events:auto;min-height:44px;padding:9px 13px;border:1px solid #72906b;border-radius:22px;background:#fffdf4;color:#34593c;font-family:"Comic Neue",sans-serif;font-size:clamp(16px,1.2vw,22px);font-weight:700;line-height:1.15}
+.narration-replay:hover{background:#eef4df}
+.story-copy[data-surface=paper] .copy-center{padding:calc(15px * var(--caption-scale,1));border-radius:calc(12px * var(--caption-scale,1));background:#fff8e9f2;box-shadow:0 3px 16px #263c2b0d}
+.reading-panel[data-surface=paper]{padding:10px;border-radius:16px;background:#fff8e9ed}
+@media(max-width:700px){.reading-panel{position:fixed;bottom:max(12px,env(safe-area-inset-bottom));left:50%!important;right:auto!important;transform:translateX(-50%);width:max-content;max-width:96vw;padding:9px;border-radius:18px;background:#fff8e9f5;box-shadow:0 2px 12px #142b2020}.reading-actions{justify-content:center}.reading-panel .result-summary{font-size:15px;margin-top:6px;padding-top:6px}.reading-panel .playback-status{font-size:13px}}
+
+/* One tempo for the spoken story and its visual transitions. */
+.tempo-control{display:inline-flex;align-items:center;gap:7px;padding:0 7px;color:#405d40;font-size:13px;min-height:40px;pointer-events:auto}
+.tempo-control select{font:inherit;font-weight:700;color:#34593c;background:#fffdf4;border:1px solid #c5cbb2;border-radius:9px;padding:7px 9px;min-height:36px;cursor:pointer}
+.tempo-control select:focus-visible{outline:3px solid #dc9d38;outline-offset:2px}

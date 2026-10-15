@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#263a30">
+  <meta name="description" content="Een week delen met Milan en Alina. Aftrekken tot twintig met brug over tien, met optionele oefeningen en duidelijke stappen.">
+  <title>Wat heb jij vandaag bij? · Meester Bob</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/ComicNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="book.css?v=tempo-1">
+  <link rel="stylesheet" href="simple-math.css?v=tempo-1">
+  <link rel="stylesheet" href="../story-nav.css?v=1">
+  <link rel="stylesheet" href="../book-menu.css?v=book-extra-1">
+  <link rel="stylesheet" href="practice-menu.css?v=1">
+</head>
+<body>
+  <main class="book" id="book" aria-label="Wat heb jij vandaag bij?">
+    <header class="book-header">
+      <a class="story-home" href="../" aria-label="Terug naar de verhaalkeuze"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5-7 7 7 7M3 12h18"/></svg>Verhalen</a>
+      <div class="book-brand"><span class="brand-leaf" aria-hidden="true">❧</span><div><h1>Wat heb jij vandaag bij?</h1><p>Een week met Milan en Alina</p></div></div>
+      <button id="controls-toggle" class="controls-toggle" aria-label="Boekbediening openen" aria-expanded="false" aria-controls="book-tools" title="Boekbediening">···</button>
+      <nav class="tools" id="book-tools" aria-label="Boekbediening" hidden>
+        <a class="tool-link" href="trainer.html?extra=1&amp;mode=solo">Extra oefenen <span aria-hidden="true">+</span></a>
+        <label class="tempo-control" for="playback-tempo">Tempo
+          <select id="playback-tempo" aria-label="Tempo van spraak en beeld">
+            <option value="0.6">60%</option><option value="0.7">70%</option>
+            <option value="0.8">80%</option><option value="0.9">90%</option>
+            <option value="1" selected>100%</option><option value="1.1">110%</option>
+            <option value="1.25">125%</option>
+          </select>
+        </label>
+        <button id="contents-open" title="Alle bladzijden"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span>Bladzijden</span></button>
+        <button id="text-toggle" aria-pressed="true" title="Tekst tonen of verbergen (T)"><span class="type-icon" aria-hidden="true">Aa</span><span>Tekst</span></button>
+        <button id="voices-toggle" aria-pressed="true" title="Stemmen aan of uit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m11 4-5 4H3v8h3l5 4V4Zm4 4a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg><span>Stemmen</span></button>
+        <button id="voice-replay" title="Deze zin opnieuw afspelen" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 8M5 3v5h5"/></svg><span>Opnieuw afspelen</span></button>
+        <button id="fullscreen" aria-label="Volledig scherm" title="Volledig scherm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button>
+      </nav>
+    </header>
+    <section class="book-spread" id="book-spread" aria-label="Verhaalpagina">
+      <button id="next" class="page-turn turn-next">Verder</button>
+      <button id="previous" class="page-turn turn-previous" aria-label="Vorige vertelstap">Terug</button>
+      <div class="picture-wrap" id="picture-wrap">
+        <img class="page-picture" id="page-picture" alt="" decoding="async" fetchpriority="high">
+        <img class="page-picture" id="page-picture-back" alt="" decoding="async" aria-hidden="true" hidden>
+        <div id="image-status" class="image-status" role="status">Het verhaal wordt geopend…</div>
+      </div>
+      <article class="story-copy" id="story-copy" aria-live="polite" aria-atomic="true">
+        <p class="chapter-title" id="chapter-title"></p>
+        <div class="copy-center" id="copy-center"><p class="speaker" id="speaker"></p><p class="passage" id="passage"></p></div>
+        <div class="beat-dots" id="beat-dots" aria-hidden="true"></div>
+      </article>
+      <div id="reading-panel" class="reading-panel">
+        <div class="reading-actions" id="reading-actions">
+          <button id="narration-play" class="narration-play" aria-pressed="false" hidden>Start voorlezen</button>
+          <button id="narration-replay" class="narration-replay" title="Deze zin opnieuw afspelen" hidden>Opnieuw ↻</button>
+          <button id="solve" class="solve" hidden>Aftrekking maken</button>
+          <button id="continue-story" class="continue-story" hidden>Verder met het verhaal →</button>
+        </div>
+        <p id="result-summary" class="result-summary" hidden></p>
+        <p id="playback-status" class="playback-status" role="status"></p>
+      </div>
+    </section>
+    <section id="math-dialog" class="math-page" aria-labelledby="math-title" hidden>
+      <header class="math-header">
+        <button id="math-close" class="math-icon" aria-label="Terug naar de telpagina" title="Terug naar de telpagina"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+        <h2 id="math-title" tabindex="-1">Brug over 10</h2>
+        <div id="math-modes" class="math-modes" role="group" aria-label="Lesvorm">
+          <button id="math-mode-demo" aria-pressed="true">Ik doe voor</button><button id="math-mode-guided" aria-pressed="false">Samen</button><button id="math-mode-solo" aria-pressed="false">Zelf</button>
+        </div>
+        <button id="math-action" class="math-action" hidden>Volgende stap</button>
+        <div class="math-menu">
+          <button id="math-tools-toggle" class="math-icon math-more" aria-label="Rekenbediening openen" aria-expanded="false" aria-controls="math-tools" title="Rekenbediening">···</button>
+          <nav id="math-tools" class="math-tools" aria-label="Rekenbediening" hidden>
+            <button id="math-guide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5c3-1 6-1 9 1v15c-3-2-6-2-9-1V5Zm18 0c-3-1-6-1-9 1v15c3-2 6-2 9-1V5Z"/></svg>Leskaart</button>
+            <button id="math-reset"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 8M5 3v5h5"/></svg>Opnieuw</button>
+            <button id="math-fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg>Volledig scherm</button>
+          </nav>
+        </div>
+        <button id="math-skip" class="math-next" aria-label="Verder met het verhaal" title="Verder met het verhaal"><span>Verhaal</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button>
+      </header>
+    <div id="math-loading" class="math-loading" role="status" hidden>Het rekenscherm wordt geopend…</div>
+    <iframe id="math-frame" title="Rekenscherm met splitsing en sok" hidden></iframe>
+    <section id="simple-math" class="simple-math" aria-label="Samen weggeven" hidden>
+      <div class="simple-heading">
+        <p class="eyebrow" id="simple-kicker"></p>
+        <h3 id="simple-equation" class="simple-equation" aria-live="polite"></h3>
+      </div>
+      <div class="sharing-table" id="sharing-table">
+        <section class="sharing-source" aria-labelledby="simple-giver">
+          <h4 id="simple-giver" class="sharing-name"></h4>
+          <div class="sharing-mat">
+            <div id="ten-frame" class="ten-frame" role="group" aria-label="Tienveld"></div>
+            <div id="extra-frame" class="extra-frame" role="group" aria-label="Naast de tien" hidden></div>
+          </div>
+        </section>
+        <span class="sharing-arrow" aria-hidden="true">→</span>
+        <section class="sharing-destination" aria-labelledby="simple-receiver">
+          <h4 id="simple-receiver" class="sharing-name"></h4>
+          <div id="received-items" class="received-items" role="group" aria-label="Hier komt wat je weggeeft"></div>
+        </section>
+      </div>
+      <div class="simple-controls">
+        <p class="simple-hint" id="simple-hint"></p>
+        <p id="simple-selection" class="simple-selection" role="status"></p>
+        <button id="simple-transfer" class="simple-transfer" disabled>Geef weg →</button>
+        <div id="simple-choices" class="simple-choices" role="group" aria-label="Kies hoeveel er overblijven" hidden></div>
+        <p id="simple-feedback" class="simple-feedback" role="status"></p>
+      </div>
+    </section>
+    </section>
+    <span class="page-progress" id="page-progress"></span>
+    <p class="page-hint" id="page-hint">Tik op de bladzijde om verder te lezen</p>
+  </main>
+  <dialog id="contents" class="contents-dialog" aria-labelledby="contents-title">
+    <header class="dialog-header"><div><p class="eyebrow">Onze week samen</p><h2 id="contents-title">Kies een bladzijde</h2></div><button id="contents-close" class="close" aria-label="Sluit bladzijden">×</button></header>
+    <div class="contents-body">
+      <section class="contents-story" aria-label="Bladzijden van het verhaal"><div id="page-grid" class="page-grid"></div></section>
+      <aside class="contents-extras">
+        <section class="practice-card" aria-labelledby="practice-title">
+          <div class="practice-picture" aria-hidden="true"><span>15 − 8</span><span>10 − 3</span></div>
+          <p class="practice-kicker">Extra oefenen</p><h3 id="practice-title">Aftrekken met brug over 10</h3>
+          <p>Reeksen van 10 aftrekkingen. Eerst terug naar tien, dan de rest eraf.</p>
+          <div class="practice-modes"><a class="practice-primary" href="trainer.html?extra=1&amp;mode=solo">Start oefenen <span aria-hidden="true">→</span></a></div>
+          <p class="practice-note">Kies tijdens het oefenen: Kijk mee, Samen of Zelf.</p>
+        </section>
+      </aside>
+    </div>
+    <footer class="contents-footer"><button id="restart" class="quiet">Vanaf het begin</button><a href="trainer.html?extra=1&amp;mode=solo">Extra aftrekkingen ↗</a></footer>
+  </dialog>
+
+  <noscript>Schakel JavaScript in om door dit vertelboek te bladeren.</noscript>
+  <script type="module" src="book.mjs?v=tempo-1"></script>
+</body>
+</html>

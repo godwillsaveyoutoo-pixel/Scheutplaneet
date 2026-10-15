@@ -1,0 +1,971 @@
+[
+  {
+    "title": "Wat heb jij vandaag bij?",
+    "scene": "opening",
+    "image": "assets/book/opening.webp",
+    "alt": "Milan wacht buiten Alina’s tuinpoort. Alina komt naar buiten met haar boekentas.",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Wat heb jij vandaag bij? Een week met Milan en Alina.",
+        "id": "doel-01"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Vandaag leren we aftrekken tot twintig met brug over tien.",
+        "id": "doel-02"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Eerst terug naar tien. Daarna trekken we de rest af.",
+        "id": "doel-03"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "We beginnen met een paar korte aftrekkingen die ons daarbij helpen.",
+        "id": "doel-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Het is maandagochtend. Milan staat aan de tuinpoort van Alina’s huis. Hij komt haar ophalen om samen naar school te wandelen.",
+        "id": "opening-01"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Alina komt naar buiten met haar boekentas op haar rug.",
+        "id": "opening-02"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Dag Milan!",
+        "id": "opening-03"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Dag Alina. Klaar?",
+        "id": "opening-04"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Ja!",
+        "id": "opening-05"
+      }
+    ],
+    "puzzle": null,
+    "page": 1,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "maandag",
+    "image": "assets/book/maandag.webp",
+    "alt": "Milan heeft 8 gummibeertjes. Alina krijgt er 3.",
+    "title": "Maandag · Gummibeertjes",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Ze wandelen samen de straat uit. In Milans jaszak ritselt iets.",
+        "id": "maandag-01"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Wat heb jij bij?",
+        "id": "maandag-02"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan haalt een zakje uit zijn jaszak. Er zitten gummibeertjes in.",
+        "id": "maandag-03"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Kijk. Voor de speeltijd.",
+        "id": "maandag-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Alina kijkt door het zakje.",
+        "id": "maandag-05"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Ik lust die rode graag.",
+        "id": "maandag-06"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Ik ook.",
+        "id": "maandag-07"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Bij een laag muurtje blijven ze even staan. Milan opent het zakje. Er zitten acht gummibeertjes in.",
+        "id": "maandag-08"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Mag ik er drie?",
+        "id": "maandag-09"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Ja, kies maar.",
+        "id": "maandag-10"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan heeft acht gummibeertjes. Hij geeft er drie aan Alina. Hoeveel houdt hij zelf over?",
+        "id": "maandag-11"
+      }
+    ],
+    "puzzle": {
+      "first": 8,
+      "second": 3,
+      "item": "gummibeertjes",
+      "giver": "Milan",
+      "receiver": "Alina",
+      "mode": "demo"
+    },
+    "page": 2,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "maandag",
+    "image": "assets/book/maandag.webp",
+    "alt": "Milan heeft 8 gummibeertjes. Alina krijgt er 3.",
+    "title": "Maandag · Na het delen",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Milan houdt vijf gummibeertjes over. Alina stopt haar drie beertjes in haar eigen doosje.",
+        "id": "maandag-na-01"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Dank je. Morgen breng ik iets lekkers voor jou mee.",
+        "id": "maandag-na-02"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Wat dan?",
+        "id": "maandag-na-03"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Dat zie je morgen.",
+        "id": "maandag-na-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Ze stoppen het zakje en het doosje weg. Dan wandelen ze verder naar school.",
+        "id": "maandag-na-05"
+      }
+    ],
+    "puzzle": null,
+    "result": {
+      "giver": "Milan",
+      "receiver": "Alina",
+      "remaining": 5,
+      "given": 3,
+      "item": "gummibeertjes"
+    },
+    "page": 3,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "dinsdag",
+    "image": "assets/book/dinsdag.webp",
+    "alt": "Alina heeft 10 mandarijnpartjes. Milan krijgt er 4.",
+    "title": "Dinsdag · Mandarijnpartjes",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Op dinsdagochtend haalt Milan Alina weer op. Ze staat al klaar aan haar tuinpoort. In haar hand houdt ze een brooddoos.",
+        "id": "dinsdag-01"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Heb je iets meegebracht?",
+        "id": "dinsdag-02"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Ja. Je mocht toch proeven?",
+        "id": "dinsdag-03"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Onderweg stoppen ze bij het muurtje. Alina opent haar brooddoos. Er liggen mandarijnpartjes in. Ze heeft de mandarijn thuis al gepeld.",
+        "id": "dinsdag-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan buigt zich naar het doosje.",
+        "id": "dinsdag-05"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Dat ruikt lekker.",
+        "id": "dinsdag-06"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Samen tellen ze de partjes. Het zijn er tien.",
+        "id": "dinsdag-07"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Wil je er vier?",
+        "id": "dinsdag-08"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Graag.",
+        "id": "dinsdag-09"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Alina heeft tien mandarijnpartjes. Ze geeft er vier aan Milan. Hoeveel houdt ze zelf over?",
+        "id": "dinsdag-10"
+      }
+    ],
+    "puzzle": {
+      "first": 10,
+      "second": 4,
+      "item": "mandarijnpartjes",
+      "giver": "Alina",
+      "receiver": "Milan",
+      "mode": "demo"
+    },
+    "page": 4,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "dinsdag",
+    "image": "assets/book/dinsdag.webp",
+    "alt": "Alina heeft 10 mandarijnpartjes. Milan krijgt er 4.",
+    "title": "Dinsdag · Na het delen",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Alina houdt zes mandarijnpartjes over. Milan heeft er vier gekregen. Hij legt ze in zijn eigen doosje.",
+        "id": "dinsdag-na-01"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Nu ruikt mijn doosje ook naar mandarijn.",
+        "id": "dinsdag-na-02"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Hij doet het even open en ruikt nog eens.",
+        "id": "dinsdag-na-03"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Niet alles opsnuiven, hè.",
+        "id": "dinsdag-na-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan lacht en klikt het deksel dicht. Samen wandelen ze verder.",
+        "id": "dinsdag-na-05"
+      }
+    ],
+    "puzzle": null,
+    "result": {
+      "giver": "Alina",
+      "receiver": "Milan",
+      "remaining": 6,
+      "given": 4,
+      "item": "mandarijnpartjes"
+    },
+    "page": 5,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "woensdag",
+    "image": "assets/book/woensdag.webp",
+    "alt": "Milan heeft 13 hazelnoten. Alina krijgt er 3.",
+    "title": "Woensdag · Hazelnoten",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Op woensdagochtend komt Milan Alina ophalen. Vandaag heeft hij een klein doosje bij.",
+        "id": "woensdag-01"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Wat zit daarin?",
+        "id": "woensdag-02"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan schudt het doosje zachtjes.",
+        "id": "woensdag-03"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Tik, tik, tik.",
+        "id": "woensdag-04"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Hazelnoten. Zonder de schil.",
+        "id": "woensdag-05"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Ben jij soms een eekhoorn?",
+        "id": "woensdag-06"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Nee. Eekhoorns gaan niet naar school.",
+        "id": "woensdag-07"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Alina lacht.",
+        "id": "woensdag-08"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Bij het muurtje maakt Milan zijn doosje open. Er zitten dertien hazelnoten in.",
+        "id": "woensdag-09"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Wil je er drie?",
+        "id": "woensdag-10"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Ja, graag.",
+        "id": "woensdag-11"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan heeft dertien hazelnoten. Hij geeft er drie aan Alina. Hoeveel houdt hij zelf over?",
+        "id": "woensdag-12"
+      }
+    ],
+    "puzzle": {
+      "first": 13,
+      "second": 3,
+      "item": "hazelnoten",
+      "giver": "Milan",
+      "receiver": "Alina",
+      "mode": "demo"
+    },
+    "page": 6,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "woensdag",
+    "image": "assets/book/woensdag.webp",
+    "alt": "Milan heeft 13 hazelnoten. Alina krijgt er 3.",
+    "title": "Woensdag · Na het delen",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Milan houdt tien hazelnoten over. Alina heeft er drie gekregen.",
+        "id": "woensdag-na-01"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Ze doen hun doosjes dicht en stoppen ze in hun boekentas.",
+        "id": "woensdag-na-02"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Ik heb nog nooit een eekhoorn met een boekentas gezien.",
+        "id": "woensdag-na-03"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Ik ook niet.",
+        "id": "woensdag-na-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Ze kijken even naar de boom naast het muurtje. Dan wandelen ze verder naar school.",
+        "id": "woensdag-na-05"
+      }
+    ],
+    "puzzle": null,
+    "result": {
+      "giver": "Milan",
+      "receiver": "Alina",
+      "remaining": 10,
+      "given": 3,
+      "item": "hazelnoten"
+    },
+    "page": 7,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "donderdag",
+    "image": "assets/book/donderdag.webp",
+    "alt": "Alina heeft 15 druiven. Milan krijgt er 8.",
+    "title": "Donderdag · Druiven",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Op donderdagochtend wacht Milan aan Alina’s tuinpoort. Als ze naar buiten komt, zoekt hij in zijn boekentas.",
+        "id": "donderdag-01"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Wat zoek je?",
+        "id": "donderdag-02"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Mijn tussendoortje.",
+        "id": "donderdag-03"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Hij kijkt nog eens in zijn tas. Dan doet hij die dicht.",
+        "id": "donderdag-04"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Vergeten. Het ligt nog thuis.",
+        "id": "donderdag-05"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Je mag van mij wat druiven hebben.",
+        "id": "donderdag-06"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Ze wandelen naar het muurtje. Alina haalt een doosje uit haar boekentas. Er zitten vijftien groene druiven in.",
+        "id": "donderdag-07"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Ik geef je er acht.",
+        "id": "donderdag-08"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Dank je. Ik pak mijn doosje.",
+        "id": "donderdag-09"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Alina heeft vijftien druiven. Ze geeft er acht aan Milan. Hoeveel houdt ze zelf over?",
+        "id": "donderdag-10"
+      }
+    ],
+    "puzzle": {
+      "first": 15,
+      "second": 8,
+      "item": "druiven",
+      "giver": "Alina",
+      "receiver": "Milan",
+      "mode": "demo"
+    },
+    "page": 8,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "donderdag",
+    "image": "assets/book/donderdag.webp",
+    "alt": "Alina heeft 15 druiven. Milan krijgt er 8.",
+    "title": "Donderdag · Na het delen",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Alina houdt zeven druiven over. In Milans doosje liggen de acht druiven die hij heeft gekregen.",
+        "id": "donderdag-na-01"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Nu heb ik toch iets voor de speeltijd.",
+        "id": "donderdag-na-02"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Doe je doosje goed dicht.",
+        "id": "donderdag-na-03"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan drukt het deksel vast. Hij stopt het doosje in zijn boekentas.",
+        "id": "donderdag-na-04"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Zo. Klaar.",
+        "id": "donderdag-na-05"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Samen wandelen ze verder naar school.",
+        "id": "donderdag-na-06"
+      }
+    ],
+    "puzzle": null,
+    "result": {
+      "giver": "Alina",
+      "receiver": "Milan",
+      "remaining": 7,
+      "given": 8,
+      "item": "druiven"
+    },
+    "page": 9,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "vrijdag",
+    "image": "assets/book/vrijdag.webp",
+    "alt": "Milan heeft 14 knikkers. Alina krijgt er 6.",
+    "title": "Vrijdag · Knikkers",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Op vrijdagochtend komt Milan weer bij Alina’s huis. Vandaag heeft hij een stoffen zakje bij.",
+        "id": "vrijdag-01"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Als Alina naar buiten komt, schudt hij ermee.",
+        "id": "vrijdag-02"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Rikketik. Rikketik.",
+        "id": "vrijdag-03"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Wat heb jij vandaag bij?",
+        "id": "vrijdag-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan maakt het zakje open. Alina kijkt erin.",
+        "id": "vrijdag-05"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Knikkers!",
+        "id": "vrijdag-06"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Zullen we in de speeltijd knikkeren?",
+        "id": "vrijdag-07"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Ja! Maar ik heb geen knikkers bij.",
+        "id": "vrijdag-08"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Je mag er van mij lenen.",
+        "id": "vrijdag-09"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Bij het muurtje legt Milan zijn knikkers in het deksel van zijn brooddoos. Daar kunnen ze niet uit rollen.",
+        "id": "vrijdag-10"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Samen tellen ze. Het zijn er veertien.",
+        "id": "vrijdag-11"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Jij mag er zes gebruiken.",
+        "id": "vrijdag-12"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan heeft veertien knikkers bij. Hij leent er zes uit aan Alina. Hoeveel stopt hij daarna in zijn eigen zakje?",
+        "id": "vrijdag-13"
+      }
+    ],
+    "puzzle": {
+      "first": 14,
+      "second": 6,
+      "item": "knikkers",
+      "giver": "Milan",
+      "receiver": "Alina",
+      "mode": "guided"
+    },
+    "page": 10,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "vrijdag",
+    "image": "assets/book/vrijdag.webp",
+    "alt": "Milan heeft 14 knikkers. Alina krijgt er 6.",
+    "title": "Vrijdag · Na het delen",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Milan stopt de acht overgebleven knikkers in zijn zakje. Alina bergt de zes geleende knikkers op.",
+        "id": "vrijdag-na-01"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Bij haar zes zit een blauwe knikker met een witte kronkel erin. Ze houdt hem even in het licht.",
+        "id": "vrijdag-na-02"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Deze vind ik de mooiste.",
+        "id": "vrijdag-na-03"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Die vind ik ook heel mooi.",
+        "id": "vrijdag-na-04"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Ik zal er goed op passen. Na school krijg je ze allemaal terug.",
+        "id": "vrijdag-na-05"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Ze stoppen de knikkers veilig weg en wandelen verder.",
+        "id": "vrijdag-na-06"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Kun jij goed mikken?",
+        "id": "vrijdag-na-07"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Dat gaan we straks zien.",
+        "id": "vrijdag-na-08"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Aan de schoolpoort nemen ze hun boekentas nog even goed vast. Ze willen allebei graag naar binnen.",
+        "id": "vrijdag-na-09"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Vandaag hebben ze veel zin in de speeltijd.",
+        "id": "vrijdag-na-10"
+      }
+    ],
+    "puzzle": null,
+    "result": {
+      "giver": "Milan",
+      "receiver": "Alina",
+      "remaining": 8,
+      "given": 6,
+      "item": "knikkers"
+    },
+    "page": 11,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "zaterdag",
+    "image": "assets/book/zaterdag.webp",
+    "alt": "Alina heeft 16 koekjes. Milan krijgt er 7.",
+    "title": "Zaterdag · Koekjes",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Het is zaterdag. Vandaag hoeven Milan en Alina niet naar school.",
+        "id": "zaterdag-01"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Ze spreken af op het speelplein.",
+        "id": "zaterdag-02"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Alina zit al aan de picknicktafel. Er staat een koekjestrommel voor haar.",
+        "id": "zaterdag-03"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Wat heb jij vandaag bij?",
+        "id": "zaterdag-04"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Dat hoor je toch?",
+        "id": "zaterdag-05"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Ze schudt de trommel heel zachtjes. Ritsel, tik.",
+        "id": "zaterdag-06"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Knikkers?",
+        "id": "zaterdag-07"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Koekjes! Knikkers mag je niet opeten.",
+        "id": "zaterdag-08"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan blijft naast de tafel staan. Alina maakt de trommel open.",
+        "id": "zaterdag-09"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Er liggen zestien kleine koekjes in. Tien bij elkaar en zes ernaast.",
+        "id": "zaterdag-10"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Jij mag er zeven hebben.",
+        "id": "zaterdag-11"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Dank je. Dan bewaren we ze tot na het spelen.",
+        "id": "zaterdag-12"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Alina heeft zestien koekjes. Ze geeft er zeven aan Milan. Hoeveel houdt ze zelf over?",
+        "id": "zaterdag-13"
+      }
+    ],
+    "puzzle": {
+      "first": 16,
+      "second": 7,
+      "item": "koekjes",
+      "giver": "Alina",
+      "receiver": "Milan",
+      "mode": "guided"
+    },
+    "page": 12,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "zaterdag",
+    "image": "assets/book/zaterdag.webp",
+    "alt": "Alina heeft 16 koekjes. Milan krijgt er 7.",
+    "title": "Zaterdag · Na het delen",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Alina houdt negen koekjes over. Milan heeft er zeven gekregen.",
+        "id": "zaterdag-na-01"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Ze bergen de koekjes veilig op. Nu eerst spelen.",
+        "id": "zaterdag-na-02"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Ik ga naar de schommel!",
+        "id": "zaterdag-na-03"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Wacht op mij!",
+        "id": "zaterdag-na-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan blijft even staan. Dan lopen ze samen naar de schommels.",
+        "id": "zaterdag-na-05"
+      }
+    ],
+    "puzzle": null,
+    "result": {
+      "giver": "Alina",
+      "receiver": "Milan",
+      "remaining": 9,
+      "given": 7,
+      "item": "koekjes"
+    },
+    "page": 13,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "zondag",
+    "image": "assets/book/zondag.webp",
+    "alt": "Milan heeft 12 stukjes appel. Alina krijgt er 5.",
+    "title": "Zondag · Stukjes appel",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Op zondag komt Alina bij Milan spelen.",
+        "id": "zondag-01"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Hun jassen hangen aan de kapstok. In de keuken staat alles klaar om fruitspiesjes te maken.",
+        "id": "zondag-02"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Wat heb jij vandaag bij?",
+        "id": "zondag-03"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Vandaag heb ik niets bij. Ik ben al thuis!",
+        "id": "zondag-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Alina kijkt naar de tafel.",
+        "id": "zondag-05"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Maar je hebt wel iets op je bord.",
+        "id": "zondag-06"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Op Milan zijn bord liggen twaalf stukjes appel. Tien bij elkaar en twee ernaast.",
+        "id": "zondag-07"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Alina zet haar lege blauwe bord dichterbij.",
+        "id": "zondag-08"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Ik geef jou vijf stukjes.",
+        "id": "zondag-09"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Dan kan ik ook een spiesje maken.",
+        "id": "zondag-10"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "De stukjes blijven op tafel liggen terwijl ze verdelen.",
+        "id": "zondag-11"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan heeft twaalf stukjes appel. Hij geeft er vijf aan Alina. Hoeveel houdt hij zelf over?",
+        "id": "zondag-12"
+      }
+    ],
+    "puzzle": {
+      "first": 12,
+      "second": 5,
+      "item": "stukjes appel",
+      "giver": "Milan",
+      "receiver": "Alina",
+      "mode": "solo"
+    },
+    "page": 14,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "scene": "zondag",
+    "image": "assets/book/zondag.webp",
+    "alt": "Milan heeft 12 stukjes appel. Alina krijgt er 5.",
+    "title": "Zondag · Na het delen",
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "Milan houdt zeven stukjes appel over. Op Alina haar bord liggen vijf stukjes.",
+        "id": "zondag-na-01"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Nu kunnen we beginnen.",
+        "id": "zondag-na-02"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Ze schuiven de stukjes één voor één op hun fruitstokjes.",
+        "id": "zondag-na-03"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Mijn spiesje is klaar!",
+        "id": "zondag-na-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan schuift het laatste stukje op zijn stokje.",
+        "id": "zondag-na-05"
+      }
+    ],
+    "puzzle": null,
+    "result": {
+      "giver": "Milan",
+      "receiver": "Alina",
+      "remaining": 7,
+      "given": 5,
+      "item": "stukjes appel"
+    },
+    "page": 15,
+    "edition": "anas-alina-v1"
+  },
+  {
+    "title": "Samen delen",
+    "scene": "afsluiting",
+    "image": "assets/book/afsluiting.webp",
+    "alt": "Milan en Alina zitten samen aan de keukentafel met hun afgewerkte fruitspiesjes.",
+    "puzzle": null,
+    "beats": [
+      {
+        "speaker": "Verteller",
+        "text": "De fruitspiesjes zijn klaar. Milan legt ze samen op een bord.",
+        "id": "slot-01"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Morgen is het weer maandag.",
+        "id": "slot-02"
+      },
+      {
+        "speaker": "Milan",
+        "text": "Dan kom ik jou weer halen.",
+        "id": "slot-03"
+      },
+      {
+        "speaker": "Alina",
+        "text": "Aan mijn tuinpoort!",
+        "id": "slot-04"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Milan knikt. Ze kijken tevreden naar hun spiesjes.",
+        "id": "slot-05"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Deze week hebben ze heel wat gedeeld.",
+        "id": "slot-06"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Bij de moeilijke aftrekkingen gingen we eerst terug naar tien. Daarna trokken we de rest af.",
+        "id": "slot-07"
+      },
+      {
+        "speaker": "Verteller",
+        "text": "Eerst naar tien, dan de rest. Zo kunnen we aftrekken met brug over tien.",
+        "id": "slot-08"
+      }
+    ],
+    "page": 16,
+    "edition": "anas-alina-v1"
+  }
+]
