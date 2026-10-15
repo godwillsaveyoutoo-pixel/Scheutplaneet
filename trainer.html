@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f4ee">
+  <meta name="description" content="Brug over tien: voordoen, samen oefenen en zelfstandige sommen met splitsing en de sok die tien maakt.">
+  <title>Brug over tien</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=forest-2">
+  <link rel="stylesheet" href="book-trainer.css?v=book-extra-1">
+  <link rel="stylesheet" href="extra-practice.css?v=2">
+</head>
+<body>
+  <main id="viewport" aria-label="Brug over tien">
+    <nav id="extra-nav" class="extra-nav" aria-label="Extra oefenen bij het boek" hidden>
+      <a class="extra-back" href="optellen.html?verder=1" aria-label="Terug naar het boek"><span aria-hidden="true">←</span><span class="extra-back-label">Boek</span></a>
+      <span class="extra-title">Extra oefenen</span>
+      <div class="extra-modes" role="group" aria-label="Oefenvorm"><button id="extra-mode-demo" aria-pressed="false">Kijk mee</button><button id="extra-mode-guided" aria-pressed="false">Samen</button><button id="extra-mode-solo" aria-pressed="true">Zelf</button></div>
+      <div id="extra-menu" class="extra-menu"><button id="extra-menu-toggle" class="extra-more" aria-label="Meer opties" aria-expanded="false" aria-controls="extra-tools">···</button><div id="extra-tools" class="extra-tools" hidden><button id="extra-guide">Leskaart</button><button id="extra-reset">Opnieuw</button><button id="extra-fullscreen">Volledig scherm</button></div></div>
+    </nav>
+    <div id="stage" class="stage">
+      <header id="trainer-header" class="header">
+        <h1>Brug over tien</h1>
+        <div class="mode-bar" role="group" aria-label="Lesvorm">
+          <button id="mode-demo" aria-pressed="true">Ik doe voor</button>
+          <button id="mode-guided" aria-pressed="false">Samen</button>
+          <button id="mode-solo" aria-pressed="false">Zelf</button>
+        </div>
+        <nav aria-label="Bediening">
+          <button id="story-toggle" class="control story-toggle" aria-label="Verhaal uitschakelen" aria-pressed="true" title="Verhaal aan of uit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M7 9c-4 8 1 12 5 12s9-4 5-12M5 10c0-6 14-6 14 0H5Z"/></svg></button>
+          <button id="guide-open" class="control guide-open" aria-label="Open leskaart" title="Leskaart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5c3-1 6-1 9 1v15c-3-2-6-2-9-1V5Zm18 0c-3-1-6-1-9 1v15c3-2 6-2 9-1V5Z"/></svg></button>
+          <button id="reset" class="control"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 8M5 3v5h5"/></svg>Opnieuw</button>
+          <button id="fullscreen" class="control fullscreen" aria-label="Volledig scherm" title="Volledig scherm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button>
+        </nav>
+      </header>
+      <section id="math-activity" class="activity" aria-label="Splitsen en aanvullen tot tien">
+        <p id="context-label" class="context-label"></p>
+        <section id="lesson-intro" class="lesson-intro" aria-labelledby="intro-title" hidden>
+          <p id="intro-kicker" class="intro-kicker">Ons doel</p>
+          <h2 id="intro-title">Eerst 10 maken</h2>
+          <p id="intro-body">Ik kan een som over tien uitrekenen door eerst 10 te maken.</p>
+          <div id="prior-prompts" class="prior-prompts" hidden><span id="prior-ten">7 + ? = 10</span><span id="prior-split">5 = 2 + ?</span></div>
+        </section>
+        <div id="equation" class="equation" role="group" aria-label="8 plus 5 is hoeveel">
+          <button id="first" class="number first" disabled>8</button>
+          <span class="symbol first-plus" aria-hidden="true">+</span>
+          <button id="second" class="number second" aria-label="Splits de 5">5</button>
+          <span class="symbol first-equals" aria-hidden="true">=</span>
+          <span id="initial-gap" class="initial-gap" aria-label="Nog in te vullen">…</span>
+          <span id="ten" class="number ten" hidden>10</span>
+          <span id="ten-plus" class="symbol ten-plus" aria-hidden="true" hidden>+</span>
+          <button id="remainder" class="number input remainder" aria-label="Vul het deel buiten de sok in" hidden>?</button>
+          <span id="final-equals" class="symbol final-equals" aria-hidden="true" hidden>=</span>
+          <button id="answer" class="number input answer" aria-label="Vul het eindantwoord in" hidden>?</button>
+          <svg id="split-arrows" class="diagram split-arrows" viewBox="0 0 1440 810" aria-hidden="true" hidden>
+            <defs><marker id="arrowhead" markerWidth="19" markerHeight="19" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M2 1 L14 8 L2 15" fill="none" stroke="#11263d" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+            <path d="M557 305 L440 365" marker-end="url(#arrowhead)"/>
+            <path d="M590 305 L650 365" marker-end="url(#arrowhead)"/>
+          </svg>
+          <button id="part-left" class="number input part part-left" aria-label="Eerste deel van de splitsing" hidden>?</button>
+          <button id="part-right" class="number input part part-right" aria-label="Tweede deel van de splitsing" hidden>?</button>
+          <svg id="sock" class="diagram sock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 810" role="img" aria-label="Het eerste getal en het eerste deel vormen samen 10 in de sok" hidden>
+            <defs>
+              <path id="sock-shape" d="M177 112 H323 Q333 112 333 122 V160 Q333 172 327 173 V274 C327 343 335 361 394 370 L475 386 C522 395 542 425 542 453 C542 502 499 516 452 516 C391 516 347 492 288 475 L217 458 C168 446 146 418 152 374 C154 352 171 332 171 294 V173 Q167 171 167 162 V122 Q167 112 177 112 Z"/>
+              <clipPath id="sock-clip"><use href="#sock-shape" xlink:href="#sock-shape" fill="white" stroke="none"/></clipPath>
+              <pattern id="sock-knit" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M2 2 6 6 10 2 M2 8 6 12 10 8" fill="none" stroke="#009d99" stroke-opacity=".07" stroke-width=".8"/></pattern>
+            </defs>
+            <use class="sock-body" href="#sock-shape" xlink:href="#sock-shape" fill="#daf5ec" fill-opacity=".67" stroke="#009e99" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <g clip-path="url(#sock-clip)" aria-hidden="true">
+              <rect x="145" y="105" width="410" height="420" fill="url(#sock-knit)"/>
+              <path class="sock-patch" fill="#71c8b7" fill-opacity=".13" stroke="none" d="M157 324 C208 336 247 385 241 468 L173 445 142 390 Z"/>
+              <path class="sock-patch" fill="#71c8b7" fill-opacity=".13" stroke="none" d="M502 395 C554 401 573 493 512 525 L478 519 C482 471 491 426 502 395 Z"/>
+              <path class="sock-seam" fill="none" stroke="#4cafa0" stroke-opacity=".54" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round" d="M159 326 C208 338 248 387 241 466 M502 395 C490 427 483 469 479 514"/>
+            </g>
+            <rect class="sock-cuff" x="167" y="112" width="166" height="60" rx="10" fill="#d6f3e9" fill-opacity=".65" stroke="#009e99" stroke-width="4"/>
+            <path class="sock-ribs" fill="none" stroke="#5abaae" stroke-opacity=".38" stroke-width="2.5" d="M181 115 V169 M199 115 V169 M217 115 V169 M235 115 V169 M253 115 V169 M271 115 V169 M289 115 V169 M307 115 V169 M323 115 V167"/>
+            <g class="sock-total" aria-hidden="true">
+              <path d="M136 181 H122 V500 H136" fill="none" stroke="var(--teal)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="72" y="365" fill="var(--teal)" stroke="none" text-anchor="middle" font-family="inherit" font-size="66" font-weight="700">10</text>
+            </g>
+          </svg>
+          <p id="sock-label" class="sock-label" hidden>Altijd 10 in mijn sok.</p>
+        </div>
+        <p id="instruction" class="instruction" role="status" aria-live="polite">Tik op de 5 om te splitsen.</p>
+        <div id="choices" class="choices" role="group" aria-label="Kies een getal" hidden></div>
+        <div id="finished" class="finished" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>De brug is gemaakt.</div>
+        <button id="lesson-action" class="lesson-action" hidden>Volgende stap</button>
+        <div id="decision" class="decision" hidden><button id="repeat-guided">Nog samen oefenen</button><button id="go-solo">Zelf verder →</button></div>
+      </section>
+      <section id="story-scene" class="story-scene" aria-labelledby="story-title" hidden>
+        <div class="story-shade" aria-hidden="true"></div>
+        <div id="forest-picker" class="forest-picker" role="group" aria-label="Kies een bosverhaal">
+          <button id="forest-squirrel" aria-pressed="true"><span class="forest-avatar animal-squirrel" aria-hidden="true"></span>Eekhoorn</button><button id="forest-hedgehog" aria-pressed="false"><span class="forest-avatar animal-hedgehog" aria-hidden="true"></span>Egel</button><button id="forest-mouse" aria-pressed="false"><span class="forest-avatar animal-mouse" aria-hidden="true"></span>Bosmuis</button><button id="forest-beaver" aria-pressed="false"><span class="forest-avatar animal-beaver" aria-hidden="true"></span>Bever</button>
+        </div>
+        <div class="story-heading"><p id="story-kicker">Een voorraad voor de winter</p><h2 id="story-title">Op zoek naar eikels</h2><p id="story-text">Noor en Noot verzamelen eikels in het bos.</p></div>
+        <div id="friend-left" class="forest-friend friend-left" aria-hidden="true"><div id="animal-left" class="squirrel squirrel-left"></div></div>
+        <div id="friend-right" class="forest-friend friend-right" aria-hidden="true"><div id="animal-right" class="squirrel squirrel-right"></div></div>
+        <div id="story-piles" class="story-piles">
+          <div class="acorn-card"><p id="pile-left-label">Noor</p><div id="pile-left" class="acorn-grid" role="img"></div></div>
+          <span id="story-plus" class="story-plus" aria-hidden="true">+</span>
+          <div class="acorn-card"><p id="pile-right-label">Noot</p><div id="pile-right" class="acorn-grid" role="img"></div></div>
+        </div>
+        <div id="story-total" class="story-total" role="status" hidden></div>
+        <div class="story-footer"><p id="story-prompt">Kunnen jullie hen helpen tellen?</p><button id="story-action">Naar de les →</button></div>
+      </section>
+      <div id="guide-overlay" class="guide-overlay" hidden>
+        <aside id="guide-card" class="guide-card" role="dialog" aria-modal="true" aria-labelledby="guide-title">
+          <button id="guide-close" class="guide-close" aria-label="Sluit leskaart">×</button>
+          <p class="intro-kicker">Leskaart voor de leerkracht</p><h2 id="guide-title">Eerst 10 maken</h2>
+          <p class="guide-goal">Doel: ik kan een som over tien uitrekenen door eerst 10 te maken.</p>
+          <h3 id="guide-heading">Samen denken</h3>
+          <p id="guide-current"></p>
+          <h3>Controleren van begrip</h3>
+          <ul><li>Laat iedereen eerst nadenken en antwoorden op een manier die past bij je klas.</li><li>Vraag ook hoe een kind aan het antwoord komt.</li><li>De splitsing verandert de hoeveelheid niet. Beide delen samen blijven het tweede getal.</li></ul>
+          <p id="guide-explanation" class="guide-explanation"></p>
+          <p class="guide-note">Kies zelf hoe de kinderen antwoorden. Jij beslist wie verder kan. Wie de aanpak nog niet begrijpt, oefent verder met jou.</p>
+          <button id="guide-done" class="lesson-action">Terug naar de les</button>
+        </aside>
+      </div>
+    </div>
+    <p class="portrait-note">Draai je scherm voor meer ruimte.</p>
+  </main>
+  <script type="module" src="app.js?v=book-extra-2"></script>
+</body>
+</html>

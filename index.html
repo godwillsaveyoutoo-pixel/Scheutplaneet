@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#263a30">
+  <meta name="description" content="Kies een rekenverhaal: optellen in het herfstbos of aftrekken met Milan en Alina. Samen rekenen tot 20 met een brug over 10.">
+  <title>Scheutplaneet · Kies je rekenverhaal</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/ComicNeue-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="start.css?v=1">
+  <script>
+    // Preserve existing bookmarks and the return route from extra practice.
+    if (new URLSearchParams(location.search).has('bladzijde') || new URLSearchParams(location.search).get('verder') === '1') {
+      location.replace('optellen.html' + location.search + location.hash);
+    }
+  </script>
+</head>
+<body>
+  <main class="story-shelf">
+    <header class="shelf-heading">
+      <p class="shelf-brand"><span aria-hidden="true">❧</span> Scheutplaneet</p>
+      <h1>Welk verhaal kiezen we?</h1>
+      <p class="shelf-intro">Samen rekenen tot 20</p>
+    </header>
+    <nav class="story-choices" aria-label="Kies een rekenverhaal">
+      <a class="story-card addition" href="optellen.html" aria-labelledby="addition-title addition-story">
+        <div class="cover"><img src="assets/book/page-01-tiny-v1.webp" alt="Amina, Sami, Maryam en Adam aan de rand van het herfstbos." width="1672" height="941" fetchpriority="high"><span class="operation" aria-hidden="true">+</span></div>
+        <div class="card-copy"><div><h2 id="addition-title">Optellen</h2><p id="addition-story">Herfst in het bos</p></div><span class="card-arrow" aria-hidden="true">→</span></div>
+      </a>
+      <a class="story-card subtraction" href="anas-alina/" aria-labelledby="subtraction-title subtraction-story">
+        <div class="cover"><img src="anas-alina/assets/book/opening.webp" alt="Milan haalt Alina op aan haar tuinpoort." width="1672" height="941"><span class="operation" aria-hidden="true">−</span></div>
+        <div class="card-copy"><div><h2 id="subtraction-title">Aftrekken</h2><p id="subtraction-story">Wat heb jij vandaag bij?</p></div><span class="card-arrow" aria-hidden="true">→</span></div>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

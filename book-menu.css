@@ -1,0 +1,45 @@
+/* Give the book overview one scroll surface; cards keep their natural height. */
+.contents-dialog{width:min(1240px,96vw);height:min(940px,94dvh);max-height:94dvh;font-family:"Comic Neue","Trebuchet MS",sans-serif;border:1px solid #d7c8a8}
+.contents-dialog[open]{display:flex;flex-direction:column;overflow:hidden}
+.contents-dialog .dialog-header{flex:none;padding:20px 26px;gap:16px;background:#fffaf1}
+.contents-dialog .dialog-header h2{font-family:inherit;font-size:30px;font-weight:700}
+.contents-dialog .eyebrow{font-family:inherit;font-size:14px;text-transform:none;letter-spacing:.02em}
+.contents-dialog .close{width:44px;min-width:44px;height:44px}
+.contents-body{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;display:grid;grid-template-columns:minmax(0,1fr) 250px;align-items:start;gap:26px;padding:24px 26px 30px}
+.contents-story{min-width:0}
+.contents-section-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 15px;margin-bottom:14px}
+.contents-section-heading h3{font-size:23px;margin:0}.contents-section-heading>span{font-size:16px;color:#7c775e}
+.page-grid{padding:0;overflow:visible;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:max-content;align-content:start;align-items:stretch;gap:16px}
+.page-card{position:relative;display:flex;flex-direction:column;min-width:0;min-height:180px;align-self:stretch;border:2px solid #e3d8c0;border-radius:14px;background:#fffdf5;box-shadow:0 3px 8px #2837250a;transition:border-color .12s,box-shadow .12s}
+.page-card img{flex:none;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain;background:#f4eedf;border-bottom:1px solid #e9dfcb}
+.page-card .card-label{flex:1;padding:12px 12px 13px;font-size:18px;line-height:1.15;font-weight:700}
+.page-card .card-label small{font-size:13px;line-height:1.2;font-weight:400;margin-bottom:5px;color:#7e765e}
+.page-card .card-puzzle{align-self:flex-start;margin:0 10px 11px;padding:4px 8px;border-radius:8px;background:#edf0dc;color:#4d6940;font-size:13px;line-height:1.2;font-weight:700}
+.page-card[aria-current=page]{border-color:#53734b;box-shadow:0 0 0 2px #53734b25}
+.page-card:hover{border-color:#9eac80;box-shadow:0 4px 13px #28372518}
+.contents-extras{position:sticky;top:0;display:grid;gap:18px;min-width:0}
+.lesson-shortcuts{display:grid;gap:8px}
+.lesson-shortcut{display:flex;align-items:center;gap:12px;min-height:64px;padding:10px 13px;text-align:left;color:var(--ink);border:1px solid #daceb6;border-radius:12px;background:#fffdf5;font-size:20px;font-weight:700}
+.lesson-shortcut>span:first-child{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;font-size:17px;color:#698052;background:#edf0dc}
+.lesson-shortcut small{display:block;margin-top:3px;font-size:15px;font-weight:400;color:#7a775f}
+.lesson-shortcut:hover{background:#f0f1df}
+.practice-card{overflow:hidden;padding:0 17px 15px;border:1px solid #cbd2b6;border-radius:16px;background:#eef1df}
+.practice-picture{position:relative;display:flex;align-items:center;justify-content:center;gap:16px;min-height:112px;margin:0 -17px 16px;background:linear-gradient(#fff8e93b,#fff8e9a1),url('assets/hedgehog-forest.png') center 60%/cover;font-size:25px;font-weight:700;isolation:isolate}
+.practice-picture span{padding:7px 9px;border-radius:10px;background:#fffbefed;color:#405e3e;box-shadow:0 3px 10px #31482d15}
+.practice-picture span:last-child{rotate:-4deg}
+.practice-kicker{margin:0 0 5px;color:#6e794c;font-size:15px;font-weight:700}
+.practice-card h3{font-size:28px;line-height:1.1;margin:0 0 8px}.practice-card>p:not(.practice-kicker){font-size:17px;line-height:1.3;margin:0 0 14px}
+.practice-animals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-bottom:14px}
+.practice-animals a{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;min-height:80px;padding:4px;text-decoration:none;color:#405d3e;font-size:14px;background:#fffaf0a3;border:1px solid transparent;border-radius:10px}
+.practice-animals a:hover{border-color:#a7b68c;background:#fffaf0}
+.animal-thumb{display:block;width:70px;height:56px;background:url('assets/forest-animals.png') no-repeat;background-size:300% 100%}
+.animal-squirrel{background-image:url('assets/squirrels.png');background-size:400% 200%;background-position:0 0}
+.animal-hedgehog{background-position:0 0}.animal-mouse{background-size:312.06897% 100%;background-position:49.05149% 0}.animal-beaver{background-size:288.82979% 100%;background-position:100% 0}
+.practice-modes{display:grid;gap:7px}.practice-modes a{display:flex;justify-content:space-between;align-items:center;min-height:44px;padding:10px 12px;color:#42603e;background:#fffaf0;border:1px solid #c7ceb2;border-radius:10px;font-size:18px;font-weight:700;line-height:1.2;text-decoration:none}
+.practice-modes a:hover{background:#fffdf5;border-color:#79966c}.practice-modes a.practice-primary{background:#4f7049;border-color:#4f7049;color:#fffaf0}.practice-modes a.practice-primary:hover{background:#3d6037}
+.practice-card>p.practice-note{font-size:14px;color:#72795e;margin:12px 0 0}
+.tools .tool-link{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:7px 10px;color:#405d40;border-radius:9px;text-decoration:none;font-size:13px;line-height:1.2}.tools .tool-link:hover{background:#e9eddb}
+@media(max-width:1060px){.page-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contents-body{grid-template-columns:minmax(0,1fr) 220px;gap:18px;padding:18px}.page-card .card-label{font-size:18px}.practice-picture{gap:9px;font-size:23px}.practice-card{padding-right:13px;padding-left:13px}.practice-picture{margin-right:-13px;margin-left:-13px}}
+@media(max-height:600px) and (orientation:landscape){.contents-dialog .dialog-header{padding:10px 18px}.contents-dialog .dialog-header h2{font-size:25px}.contents-dialog .eyebrow{margin-bottom:3px;font-size:13px}.contents-body{padding:16px;gap:16px}.contents-extras{position:static}.page-grid{gap:12px}.page-card{min-height:165px}.page-card .card-label{padding:9px 10px;font-size:17px}.contents-section-heading h3{font-size:21px}.contents-section-heading{margin-bottom:11px}}
+@media(max-width:580px){.contents-dialog{width:96vw;height:94dvh}.contents-dialog .dialog-header{padding:13px 16px}.contents-dialog .dialog-header h2{font-size:25px}.contents-body{grid-template-columns:minmax(0,1fr);padding:15px;gap:24px}.contents-extras{position:static}.page-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.page-card{min-height:165px}.page-card .card-label{font-size:17px;padding:10px}.page-card .card-puzzle{font-size:12px;margin:0 7px 9px;padding:4px 6px}.practice-animals{grid-template-columns:repeat(4,minmax(0,1fr))}.practice-animals a{font-size:13px}.animal-thumb{width:62px;height:51px}.lesson-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr))}.lesson-shortcut{font-size:18px;gap:8px;padding:9px}.lesson-shortcut small{font-size:13px}.lesson-shortcut>span:first-child{width:27px;height:27px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){.page-card{transition:none}}

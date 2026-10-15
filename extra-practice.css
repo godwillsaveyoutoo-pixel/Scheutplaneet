@@ -1,0 +1,19 @@
+/* A single, unscaled toolbar above the exercise. Animals follow the exercise order. */
+.extra-nav{height:56px;min-height:56px;gap:10px;padding:5px max(12px,env(safe-area-inset-right)) 5px max(12px,env(safe-area-inset-left));justify-content:flex-start}
+.extra-nav .extra-back{gap:7px;min-width:44px;min-height:44px;justify-content:center;padding:8px 11px;font-size:18px}
+.extra-nav .extra-title{margin-right:auto;font-size:19px;font-weight:700;white-space:nowrap}
+.extra-modes{display:flex;align-items:center;gap:2px;padding:3px;border:1px solid #d7dbc2;border-radius:24px;background:#e9eddb;margin-left:auto}
+.extra-modes button{min-height:40px;border:0;border-radius:20px;padding:8px 14px;font:700 17px "Comic Neue","Trebuchet MS",sans-serif;color:#526844;background:transparent;line-height:1.15;white-space:nowrap}
+.extra-modes button[aria-pressed=true]{background:#55754b;color:#fffaf0}.extra-modes button:hover:not([aria-pressed=true]){background:#fffaf0}
+.extra-nav button:focus-visible,.extra-nav a:focus-visible{outline:3px solid #c89b45;outline-offset:2px}
+.extra-menu{position:relative;flex:none}.extra-more{display:grid;place-items:center;width:44px;height:44px;padding:0 0 7px;border:1px solid #c9cfb4;border-radius:50%;background:#fffaf0;color:#526844;font-size:27px;line-height:1}
+.extra-more:hover,.extra-more[aria-expanded=true]{background:#e9eddb}
+.extra-tools{position:absolute;right:0;top:calc(100% + 10px);display:grid;gap:3px;width:185px;padding:7px;border:1px solid #d7dbc2;border-radius:14px;background:#fffaf0;box-shadow:0 8px 24px #263c2b24}
+.extra-tools button{min-height:44px;padding:9px 12px;border:0;border-radius:9px;text-align:left;background:transparent;font:700 18px "Comic Neue","Trebuchet MS",sans-serif;color:#405d3e}
+.extra-tools button:hover{background:#edf0dc}
+.book-extra .header,.book-extra .forest-picker{display:none!important}
+.book-extra .story-heading,.book-extra .is-opening .story-heading{top:85px}
+.book-extra .forest-friend,.book-extra .is-opening .forest-friend{top:260px}
+.book-extra .story-piles{top:295px}
+@media(max-width:760px){.extra-nav .extra-title{display:none}.extra-nav{gap:8px}.extra-modes button{padding:8px 12px}}
+@media(max-width:420px){.extra-back-label{display:none}.extra-nav .extra-back{padding:8px}.extra-nav{padding-left:max(8px,env(safe-area-inset-left));padding-right:max(8px,env(safe-area-inset-right));gap:6px}.extra-modes button{padding:8px 11px;font-size:16px}}

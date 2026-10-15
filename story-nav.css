@@ -1,0 +1,7 @@
+/* A quiet, always available way to switch stories. */
+.story-home{pointer-events:auto;order:0;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:7px 13px;border:1px solid #fff8e970;border-radius:20px;background:#fff8e9ed;color:#43593f;text-decoration:none;font-family:"Comic Neue","Trebuchet MS",sans-serif;font-size:16px;font-weight:700;line-height:1.2;white-space:nowrap;touch-action:manipulation}
+.story-home:hover{background:#fffdf5}.story-home:focus-visible{outline:3px solid #dc9d38;outline-offset:3px}
+.story-home svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.book-header{max-width:calc(100vw - 20px)}
+.book-header .tools{max-width:calc(100vw - 185px)}
+@media(max-width:600px){.story-home{min-height:40px;padding:7px 10px;font-size:15px;gap:5px}.book-header .tools{max-width:calc(100vw - 170px)}}
